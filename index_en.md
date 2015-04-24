@@ -11,6 +11,8 @@ You have to add named layer with parameters
 ```
 As the results you get a [pseudo-3D map](https://a.tiles.mapbox.com/v4/andygol.m044di7c/page.html?access_token=pk.eyJ1IjoiYW5keWdvbCIsImEiOiJwSUo1SV9ZIn0.5Y4I6L-HlwNhbMMSzhU0Mg#15/48.4701/35.0398).
 
+![](https://pbs.twimg.com/media/CDNizxkW8AAl12v.png:large)
+<!-- iframe replacement -->
 <iframe width='100%' height='500px' frameBorder='0' src='https://a.tiles.mapbox.com/v4/andygol.m044di7c/attribution,zoompan,zoomwheel,geocoder,share.html?access_token=pk.eyJ1IjoiYW5keWdvbCIsImEiOiJwSUo1SV9ZIn0.5Y4I6L-HlwNhbMMSzhU0Mg'></iframe>
 
 #### Now more detailed.
@@ -57,7 +59,7 @@ and to increase the parameter `[timeout:*]` (waiting time of the query) from 25 
 
 ![overpass_export](https://cloud.githubusercontent.com/assets/369696/7304095/a0d82084-e9fd-11e4-9f4d-697bac4f48b8.png)
 
-To do this you should open JOSM with enabled "Remote Control".
+To do this you should run JOSM with enabled "Remote Control".
 
 ![overpass_export_fix](https://cloud.githubusercontent.com/assets/369696/7304123/cef965e0-e9fd-11e4-83e6-e94d33a2b97b.png)
 
@@ -73,7 +75,7 @@ For instructions on installing the server and initializing the database [here](h
 [Start Server](http://www.postgresql.org/docs/9.4/static/server-start.html) with a command  
 `$ postgres -D /usr/local/pgsql/data`
 
-in my case 
+in my case  
 `andygol$ postgres -D /usr/local/var/postgres`
 
 [activate PostGIS](http://postgis.net/docs/postgis_installation.html#install_short_version)  
@@ -114,7 +116,7 @@ Well, what if you exported the data before it was checked you would have to do i
 All we need is a repeat step 3  
 `osm2pgsql -с —s -S ~/Documents/Mapbox/Studio/3dp/dp-default.style -d gisdb -C 4000 --number-processes 2 dp-buildings.osm`
 
-You can add a `-c` to remove existing data in the database
+You can add `-c` to remove existing data in the database
 
 ## 6. Creating SQL queries
 
@@ -150,6 +152,7 @@ ORDER BY ST_YMax(ST_Envelope(way))
 ## 7. Obtaining data for styling in Mapbox Studio
 
 "Now we will try to take off with it all"
+
 Run [Mapbox Studio](https://www.mapbox.com/mapbox-studio/#darwin)
 
 Create a new project, add a data layer:
@@ -160,7 +163,7 @@ To ensure that you do not get an error message you need to add query on the tab 
 
 ![mbs_sql_quary](https://cloud.githubusercontent.com/assets/369696/7304586/1a6c0a70-ea01-11e4-80c2-d60099c634d5.png)
 
-repeat for each request, as a result we get 4 layers.
+repeat for each request, as a result we get 4 layers.  
 Good recommendation to read – https://www.mapbox.com/guides/postgis-manual/#sql-queries
 
 ![mbs_data_source](https://cloud.githubusercontent.com/assets/369696/7304620/49c84842-ea01-11e4-8bcd-f43145f339b5.png)
@@ -220,6 +223,6 @@ In order to publish your map for the general public, uncheck as in the figure be
 If you have any questions about Mapbox Online Editor – https://www.mapbox.com/help/#editor
 
 ##### Further reading:
-https://switch2osm.org/?s=osm2pg
-http://learnosm.org/en/map-design/
-http://learnosm.org/en/osm-data/
+https://switch2osm.org/?s=osm2pg  
+http://learnosm.org/en/map-design/  
+http://learnosm.org/en/osm-data/  
