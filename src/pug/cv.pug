@@ -1,0 +1,251 @@
+doctype html
+html(lang='en')
+
+    head
+
+        include includes/head.pug
+        include includes/css.pug
+
+    body.d-flex.flex-column.h-100.bg-light
+
+        main.flex-shrink-0
+
+            // Navigation
+            include includes/navbar.pug
+
+            // Page Content
+            .container.px-5.my-5
+                .text-center.mb-5
+                    h1.display-5.fw-bolder.mb-0
+                        span.text-gradient.d-inline Curriculum Vitae
+                .row.gx-5.justify-content-center
+
+                    .col-lg-11.col-xl-9.col-xxl-8
+
+                        // Experience Section
+                        section
+                            .d-flex.align-items-center.justify-content-between.mb-4
+                                h2.text-primary.fw-bolder.mb-0 Experience
+                                // Download resume button
+                                // Note: Set the link href target to a PDF file within your project
+                                //- a.btn.btn-primary.px-4.py-3(href='#!')
+                                //-     .d-inline-block.bi.bi-download.me-2
+                                //-     | Download CV
+
+                            // Experience Card 1
+                            .card.shadow.border-0.rounded-4.mb-5
+                                .card-body.p-5
+                                    .row.align-items-start.gx-5
+                                        .col.text-center.text-lg-start.mb-4.mb-lg-0
+                                            .bg-light.p-4.rounded-4
+                                                .text-primary.fw-bolder.mb-3 2023 - Present
+                                                .small.fw-bolder GIS | OpenStreetMap consultant
+                                                //- .small.text-muted Stark Industries
+                                                .small.text-muted Dnipro, Ukraine
+                                        .col-lg-8
+                                            div 
+                                                p Since 2009, I've been dedicated to OpenStreetMap (OSM), consistently sharing expertise while continuously learning and growing in GIS, communication, data analytics, product management, and documentation organization.
+                                                p Enhancing subject knowledge elevates work efficiency and product quality. I've passionately educated team members, OSM community, students, and GIS enthusiasts globally. My contributions include numerous workshops, presentations, and informational resources, with the <a href="https://labs.mapbox.com/mapping/mapping-for-navigation/">“Mapping for Navigation”</a> guide being a standout example.
+                                                p My adept communication skills enable me to convey complex ideas and objectives to diverse audiences and facilitate seamless team communication. Combined with my leadership and teaching abilities, I maintain engagement, distribute work efficiently, and foster a productive and harmonious work environment, resulting in exceptional results.
+                                                p I am ready to embark on a new challenge.
+
+                            // Experience Card 2
+                            .card.shadow.border-0.rounded-4.mb-5
+                                .card-body.p-5
+                                    .row.align-items-start.gx-5
+                                        .col.text-center.text-lg-start.mb-6.mb-lg-0
+                                            .bg-light.p-4.rounded-4
+                                                .text-primary.fw-bolder.mb-3 Nov 2014 - Dec 2022
+                                                .small.fw-bolder Head Data Service Consultant
+                                                .small.text-muted Mapbox
+                                                .small.text-muted Washington, DC
+                                        .col-lg-8
+                                            div
+                                                
+                                                h5 Map & Navigation Feedback 
+                                                p Established and fine-tuned a workflow for customers feedback review  associated with map data issues. 99.8% of issues are resolved within 7 days.
+                                                p Highlighted and structured an elimination process of weak spots in navigation services for their further improvements.
+                                                p Enhanced a proactive issue resolution pipeline within the navigation data to reduce incidence of customers feedback pertaining to navigation.
+                                                p Forwarded major tool improvements that increased Streets Review, Mapbox Contribute, Navigation Feedback teams productivity.
+                                                
+                                                h5 Vandalism Eradication
+                                                p Prevented leaks of inappropriate changes from OSM to Mapbox Streets map using internal false-positive probes to test team performance and attentiveness. Attained an impressive team accuracy score of 98% while also maintaining a stringent data review timeline of one week for published content.
+                                                p Improved the review workflow for incoming OSM edits that put an end to a 6-months review backlog. Review rate per team member sky-rocketed form 2 000 to 12 000 views per day during 1 month. 
+
+                                                h5 Internal & External Data Analysis
+                                                p Created and optimised high precision dashboards for tracking KPIs and SLAs. 
+                                                p Performed an extensive research on OSM data suitability for navigation services comparing with other navigation service providers.
+                                                p Conducted private navigation A/B tests for high priority customers.
+                                                p Developed a comprehensive workflow for efficiently triaging incoming issues, distributing them among respective teams, and monitoring teams performance.
+
+                                                h5 Documentation & Education
+                                                p Created and implemented documentation for map data production for navigation.
+                                                p Educated and trained new team members in OSM data model for top performance.
+                                                p Pioneered Mapillary as data source for mapping for navigation.
+                                                p Established standards of communication between OSM communities and corporate mapping teams.
+                                                p Bridged the gap between corporate and crowdsourcing OSM mapping communities.
+
+
+                            // Experience Card 3
+                            .card.shadow.border-0.rounded-4.mb-5
+                                .card-body.p-5
+                                    .row.align-items-start.gx-5
+                                        .col.text-center.text-lg-start.mb-4.mb-lg-0
+                                            .bg-light.p-4.rounded-4
+                                                .text-primary.fw-bolder.mb-3 Apr 2014 - Mar 2015
+                                                .small.fw-bolder Deputy military commissioner, Head of enlistment department
+                                                .small.text-muted Military Registration and Enlistment Office
+                                                .small.text-muted Dnipro, Ukraine
+                                        .col-lg-8
+                                            div
+                                                p Drafted on the order of the President of Ukraine to protect the country against Russian aggression during the first stage of Russia invasion in 2014.
+
+                                                p Prepared and conducted mobilisation measures related to enlisting persons eligible for military service.
+                                                p Organised burial ceremonies and commemoration of the defenders of the motherland, who perished during hostilities in the East of Ukraine, defending the country from Russian aggression.
+
+
+                            // Experience Card 4
+                            .card.shadow.border-0.rounded-4.mb-5
+                                .card-body.p-5
+                                    .row.align-items-start.gx-5
+                                        .col.text-center.text-lg-start.mb-4.mb-lg-0
+                                            .bg-light.p-4.rounded-4
+                                                .text-primary.fw-bolder.mb-3 Jul 2012 - May 2015
+                                                .small.fw-bolder Deputy Head of the Department of Correspondent Banking Relations
+                                                .small.text-muted JSC Bank Vostok
+                                                .small.text-muted Dnipro, Ukraine
+                                        .col-lg-8
+                                            div
+                                                p Established relationships with bank-correspondents. 
+                                                p Managed correspondent accounts and registered them in the National Bank of Ukraine. 
+                                                p Arranged wire transfers via messages of 1,2,3,9 SWIFT categories.
+                                                p Investigated payments processing for bank-correspondents.
+                                                p Communicated with the banks-correspondents concerning processing clients' wire transfers.
+                                                p Provided interbank wire transfers.
+
+                            // Experience Card 5
+                            .card.shadow.border-0.rounded-4.mb-5
+                                .card-body.p-5
+                                    .row.align-items-start.gx-5
+                                        .col.text-center.text-lg-start.mb-4.mb-lg-0
+                                            .bg-light.p-4.rounded-4
+                                                .text-primary.fw-bolder.mb-3 1997 - 2012
+                                                .small.fw-bolder Various positions in banks
+                                                //- .small.text-muted JSC Bank Vostok
+                                                .small.text-muted Dnipro, Ukraine
+                                        .col-lg-8
+                                            div 15+ years of progressive banking experience, I have held various roles from trainee to department manager. My expertise spans Money Market and Forex, Correspondent Banking and Wire Transfers, as well as Financial Planning and Analytics.
+
+                        // Education Section
+                        section
+                            h2.text-secondary.fw-bolder.mb-4 Education
+                            
+                            // Education Card 1
+                            .card.shadow.border-0.rounded-4.mb-5
+                                .card-body.p-5
+                                     .row.align-items-start.gx-5
+                                        .col.text-center.text-lg-start.mb-4.mb-lg-0
+                                            .bg-light.p-4.rounded-4
+                                                .text-secondary.fw-bolder.mb-3 1992 - 1997
+                                                .mb-2
+                                                    .small.fw-bolder Oles Honchar Dnipro National University
+                                                    .small.text-muted Dnipro, Ukraine
+                                                .fst-italic
+                                                    .small.text-muted Specialist
+                                                    .small.text-muted Economics
+                                        .col-lg-8
+                                            div My experience is primarily focused on optimizing the performance of innovation in corporate enterprises, managing intellectual assets, and facilitating the expansion of knowledge-intensive businesses in the financial sector, among various other areas.
+
+
+                        // Divider
+                        .pb-5
+
+                        // Skills Section
+                        section
+                            // Skillset Card
+                            .card.shadow.border-0.rounded-4.mb-5
+                                .card-body.p-5
+
+                                    // GIS skills list
+                                    .mb-5
+                                        .d-flex.align-items-center.mb-4
+                                            .feature.bg-primary.bg-gradient-primary-to-secondary.text-white.rounded-3.me-3
+                                                i.bi.bi-geo
+                                            h3.fw-bolder.mb-0
+                                                span.text-gradient.d-inline GIS                           
+                                        .d-flex.flex-wrap.mb-3
+                                            each val in ['OSM Data Model', 'QGIS', 'JOSM', 'iD', 'Vespucci', 'Merkaartor', 'OSMCHa', 'OSRM', 'Valhalla', 'Overpass Turbo', 'Osmosis', 'MapRoullete', 'HOT Tasking Manager', 'LeafletJS', 'MaplibreJS']
+                                                .d-flex.align-items-center.bg-light.rounded-4.p-3.h-100.me-3.mb-3= val 
+                                        
+                                    // Technical skills list
+                                    .mb-5
+                                        .d-flex.align-items-center.mb-4
+                                            .feature.bg-primary.bg-gradient-primary-to-secondary.text-white.rounded-3.me-3
+                                                i.bi.bi-tools
+                                            h3.fw-bolder.mb-0
+                                                span.text-gradient.d-inline Technical Skills
+                                        .d-flex.flex-wrap.mb-3
+                                            each val in ['HTML', 'CSS', 'Markdown', 'SQL', 'RegExp', 'JSON', 'Yaml', 'JavaScript', 'Python', 'PostgreSQL', 'PostGIS', 'Git', 'Shell', 'Docker']
+                                                .d-flex.align-items-center.bg-light.rounded-4.p-3.h-100.me-3.mb-3= val 
+                                           
+                                    // Team Work
+                                    .mb-5
+                                        .d-flex.align-items-center.mb-4
+                                            .feature.bg-primary.bg-gradient-primary-to-secondary.text-white.rounded-3.me-3
+                                                i.bi.bi-people-fill
+                                            h3.fw-bolder.mb-0
+                                                span.text-gradient.d-inline Team Work
+                                        .d-flex.flex-wrap.mb-3
+                                            each val in ['Agile', 'Lean', 'Scrum', 'Jira', 'GitHub', 'Monday', 'Mode Analitics', 'Google Suite']
+                                                .d-flex.align-items-center.bg-light.rounded-4.p-3.h-100.me-3.mb-3= val
+
+                                    // Soft skills
+                                    .mb-5
+                                        .d-flex.align-items-center.mb-4
+                                            .feature.bg-primary.bg-gradient-primary-to-secondary.text-white.rounded-3.me-3
+                                                i.bi.bi-sliders
+                                            h3.fw-bolder.mb-0
+                                                span.text-gradient.d-inline Soft Skills
+                                        .d-flex.flex-wrap.mb-3
+                                            each val in ['Problem Solving', 'Innvation', 'Startategic Thinking', 'Empathy', 'Design Thinking', 'Leadership', 'Colaboration']
+                                                .d-flex.align-items-center.bg-light.rounded-4.p-3.h-100.me-3.mb-3= val
+
+                                    // Econimics skills
+                                    .mb-0
+                                        .d-flex.align-items-center.mb-4
+                                            .feature.bg-primary.bg-gradient-primary-to-secondary.text-white.rounded-3.me-3
+                                                i.bi.bi-cash-coin
+                                            h3.fw-bolder.mb-0
+                                                span.text-gradient.d-inline Economics
+                                        .d-flex.flex-wrap.mb-3
+                                            each val in ['Business Planing', 'SWIFT', 'Wire Transfers', 'Accounting', 'Financial Planing', 'Reporting', 'Reuters Dealing', 'Forex', 'Money Market']
+                                                .d-flex.align-items-center.bg-light.rounded-4.p-3.h-100.me-3.mb-3= val
+
+
+                        // Hobby Section
+                        section
+                            .d-flex.align-items-center.justify-content-between.mb-4
+                                h2.text-primary.fw-bolder.mb-0 Hobbies and Volunteering
+
+                            // Experience Card 1
+                            .card.shadow.border-0.rounded-4.mb-5
+                                .card-body.p-5
+                                    .row.align-items-start.gx-5
+                                        div 
+                                            
+                                            h5 OpenStreetMap – global free editable map
+                                            p I am a long-time contributor to the <a href="https://openstreetmap.org/">OpenStreetMap</a> project. I not only participate in adding new data and updating existing information, but also put a lot of effort into localizing tools and documentation into Ukrainian to attract more participants from Ukraine. I translated and maintained the interfaces of such editors as <a href="https://ideditor.org/">iD</a> and <a href="https://josm.openstreetmap.de/">JOSM</a>, translated the documentation in the OSM Wiki, helped in the preparation of issues for the <a href="https://weeklyosm.eu/uk">weeklyOSM</a>. In addition, I created a website for the <a href="https://openstreetmap.org.ua">Ukrainian OpenStreetMap Community</a> and helped to establish cooperation with corporate users, one of whom created and maintains a tile server for use in Ukraine.
+                                            p However, my efforts are not limited to the Ukrainian community. I have updated and offered to the community site that facilitate the wide dissemination of <a href="https://andygol.co.ua/welcome-mat-osmf/">information about the project</a> and <a href="https://andygol.co.ua/switch2osm-mkdocs/">Switch2OSM</a>, guidance on the transition to using OpenStreetMap.
+
+                                            h5 3D Modeling and Printing
+                                            p 3D printing became my hobby not long ago. I documented my first steps in this hobby on my <a href="https://www.youtube.com/@AndriiHolovin">YouTube channel</a>. I also made efforts to localize the <a href="https://snapmaker.com/snapmaker-luban">Luban slicer</a> to 100% in Ukrainian. Not only the interface was localized, but also the built-in help.
+                                            p I have a universal 3D printer that also has a laser for cutting and engraving. And I managed to cut a model of the landscape of the island from plywood, see more about it <a href="https://blog.andygol.co.ua/en/2022/02/10/making-a-model-of-an-island-using-plywood/">here</a>.
+
+                                            h5 Other Hobbies and Skills
+                                            p <a href="https://twitter.com/andygol_/status/1563519727133401089">Building marble machines</a>, cross stitching, crocheting, knitting, translation of free software to Ukrainian, photography…
+                                            p BC driver's license, over 20 years accident free driving experience.
+
+        // Footer
+        include includes/footer.pug
+
+        include includes/scripts.pug

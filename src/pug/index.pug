@@ -3,16 +3,7 @@ html(lang='en')
 
     head
 
-        meta(charset='utf-8')
-        meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
-        meta(name='description', content='')
-        meta(name='author', content='')
-
-        title Personal - Start Bootstrap Theme
-
-        // Favicon
-        link(rel='icon', type='image/x-icon', href='assets/favicon.ico')
-
+        include includes/head.pug
         include includes/css.pug
 
     body.d-flex.flex-column.h-100
@@ -30,19 +21,18 @@ html(lang='en')
                             // Header text content
                             .text-center.text-xxl-start
                                 .badge.bg-gradient-primary-to-secondary.text-white.mb-4
-                                    .text-uppercase Design &middot; Development &middot; Marketing
+                                    .text-uppercase &middot; Manage &middot; Lead &middot; Cooperate &middot;
                                 .fs-3.fw-light.text-muted I can help your business to
                                 h1.display-3.fw-bolder.mb-5
-                                    span.text-gradient.d-inline Get online and grow fast
+                                    span.text-gradient.d-inline Understand how people and goods are moving around
                                 .d-grid.gap-3.d-sm-flex.justify-content-sm-center.justify-content-xxl-start.mb-3
-                                    a.btn.btn-primary.btn-lg.px-5.py-3.me-sm-3.fs-6.fw-bolder(href='resume.html') Resume
-                                    a.btn.btn-outline-dark.btn-lg.px-5.py-3.fs-6.fw-bolder(href='projects.html') Projects
+                                    a.btn.btn-primary.btn-lg.px-5.py-3.fs-6.fw-bolder.me-sm-3(href='cv.html')          CV         
+                                    //- a.btn.btn-outline-dark.btn-lg.px-5.py-3.fs-6.fw-bolder(href='projects.html') Projects
                         .col-xxl-7
                             // Header profile picture
                             .d-flex.justify-content-center.mt-5.mt-xxl-0
                                 .profile.bg-gradient-primary-to-secondary
-                                    // TIP: For best results, use a photo with a transparent background like the demo example below
-                                    // Watch a tutorial on how to do this on YouTube (link)
+                                    // TIP: For best results, use a photo with a transparent background
                                     img.profile-img(src='assets/profile.png', alt='...')
                                     .dots-1
                                         include includes/svg-dots.pug
@@ -59,17 +49,24 @@ html(lang='en')
                     .row.gx-5.justify-content-center
                         .col-xxl-8
                             .text-center.my-5
+                                //- h2.display-5.fw-bolder
+                                //-     span.text-primary.d-inline About Me
+                                //- p.lead.fw-light.mb-4 My name is Andrii Holovin and I help brands grow.
                                 h2.display-5.fw-bolder
-                                    span.text-gradient.d-inline About Me
-                                p.lead.fw-light.mb-4 My name is Start Bootstrap and I help brands grow.
-                                p.text-muted Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit dolorum itaque qui unde quisquam consequatur autem. Eveniet quasi nobis aliquid cumque officiis sed rem iure ipsa! Praesentium ratione atque dolorem?
+                                    span.text-primary.d-inline My name is Andrii Holovin and I help brands grow.
+                            .text-left.my-5
+                                p.text-muted 8+ years of consultancy expertise in managing data workflows, protecting data integrity in OpenStreetMap, global navigation solutions, and optimizing customer satisfaction.
+                                p.text-muted 14+ years of expertise in OpenStreetMap data creation and modelling, quality assurance, community development.
+                                p.text-muted 15+ years of progressive banking experience, I have held various roles from trainee to department manager. My expertise spans Money Market and Forex, Correspondent Banking and Wire Transfers, as well as Financial Planning and Analytics.
                                 .d-flex.justify-content-center.fs-2.gap-4
-                                    a.text-gradient(href="#!") 
-                                        i.bi.bi-twitter
-                                    a.text-gradient(href="#!") 
+                                    a.text-gradient(href="https://x.com/andygol_") 
+                                        i.bi.bi-twitter-x
+                                    a.text-gradient(href="https://www.linkedin.com/in/andrii-holovin-b58201122/") 
                                         i.bi.bi-linkedin
-                                    a.text-gradient(href="#!") 
+                                    a.text-gradient(href="https://github.com/andygol") 
                                         i.bi.bi-github
+                                    a.text-gradient(href="https://www.youtube.com/@AndriiHolovin") 
+                                        i.bi.bi-youtube
 
         // Footer
         include includes/footer.pug
