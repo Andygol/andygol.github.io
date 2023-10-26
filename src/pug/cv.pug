@@ -20,7 +20,7 @@ html(lang='en')
                         span.text-gradient.d-inline Curriculum Vitae
                 .row.gx-5.justify-content-center
 
-                    .col-lg-11.col-xl-9.col-xxl-8
+                    .col-lg-12.col-xl-11.col-xxl-10
 
                         // Experience Section
                         section
@@ -165,61 +165,23 @@ html(lang='en')
                             // Skillset Card
                             .card.shadow.border-0.rounded-4.mb-5
                                 .card-body.p-5
-
-                                    // GIS skills list
-                                    .mb-5
-                                        .d-flex.align-items-center.mb-4
-                                            .feature.bg-primary.bg-gradient-primary-to-secondary.text-white.rounded-3.me-3
-                                                i.bi.bi-geo
-                                            h3.fw-bolder.mb-0
-                                                span.text-gradient.d-inline GIS                           
-                                        .d-flex.flex-wrap.mb-3
-                                            each val in ['OSM Data Model', 'QGIS', 'JOSM', 'iD', 'Vespucci', 'Merkaartor', 'OSMCHa', 'OSRM', 'Valhalla', 'Overpass Turbo', 'Osmosis', 'MapRoullete', 'HOT Tasking Manager', 'LeafletJS', 'MaplibreJS']
-                                                .d-flex.align-items-center.bg-light.rounded-4.p-3.h-100.me-3.mb-3= val 
-                                        
-                                    // Technical skills list
-                                    .mb-5
-                                        .d-flex.align-items-center.mb-4
-                                            .feature.bg-primary.bg-gradient-primary-to-secondary.text-white.rounded-3.me-3
-                                                i.bi.bi-tools
-                                            h3.fw-bolder.mb-0
-                                                span.text-gradient.d-inline Technical Skills
-                                        .d-flex.flex-wrap.mb-3
-                                            each val in ['HTML', 'CSS', 'Markdown', 'SQL', 'RegExp', 'JSON', 'Yaml', 'JavaScript', 'Python', 'PostgreSQL', 'PostGIS', 'Git', 'Shell', 'Docker']
-                                                .d-flex.align-items-center.bg-light.rounded-4.p-3.h-100.me-3.mb-3= val 
-                                           
-                                    // Team Work
-                                    .mb-5
-                                        .d-flex.align-items-center.mb-4
-                                            .feature.bg-primary.bg-gradient-primary-to-secondary.text-white.rounded-3.me-3
-                                                i.bi.bi-people-fill
-                                            h3.fw-bolder.mb-0
-                                                span.text-gradient.d-inline Team Work
-                                        .d-flex.flex-wrap.mb-3
-                                            each val in ['Agile', 'Lean', 'Scrum', 'Jira', 'GitHub', 'Monday', 'Mode Analitics', 'Google Suite']
-                                                .d-flex.align-items-center.bg-light.rounded-4.p-3.h-100.me-3.mb-3= val
-
-                                    // Soft skills
-                                    .mb-5
-                                        .d-flex.align-items-center.mb-4
-                                            .feature.bg-primary.bg-gradient-primary-to-secondary.text-white.rounded-3.me-3
-                                                i.bi.bi-sliders
-                                            h3.fw-bolder.mb-0
-                                                span.text-gradient.d-inline Soft Skills
-                                        .d-flex.flex-wrap.mb-3
-                                            each val in ['Problem Solving', 'Innvation', 'Startategic Thinking', 'Empathy', 'Design Thinking', 'Leadership', 'Colaboration']
-                                                .d-flex.align-items-center.bg-light.rounded-4.p-3.h-100.me-3.mb-3= val
-
-                                    // Econimics skills
-                                    .mb-0
-                                        .d-flex.align-items-center.mb-4
-                                            .feature.bg-primary.bg-gradient-primary-to-secondary.text-white.rounded-3.me-3
-                                                i.bi.bi-cash-coin
-                                            h3.fw-bolder.mb-0
-                                                span.text-gradient.d-inline Economics
-                                        .d-flex.flex-wrap.mb-3
-                                            each val in ['Business Planing', 'SWIFT', 'Wire Transfers', 'Accounting', 'Financial Planing', 'Reporting', 'Reuters Dealing', 'Forex', 'Money Market']
-                                                .d-flex.align-items-center.bg-light.rounded-4.p-3.h-100.me-3.mb-3= val
+                                
+                                    mixin skillSection(iconClass, title, skills, marginClass)
+                                        div(class=marginClass)
+                                            .d-flex.align-items-center.mb-4
+                                                .feature.bg-primary.bg-gradient-primary-to-secondary.text-white.rounded-3.me-3
+                                                    i(class=iconClass)
+                                                h3.fw-bolder.mb-0
+                                                    span.text-gradient.d-inline= title
+                                            .d-flex.flex-wrap.mb-3
+                                                each val in skills 
+                                                    .d-flex.align-items-center.bg-light.rounded-md-4.rounded-3.p-md-3.px-2.py-1.h-100.me-md-3.me-2.mb-md-3.mb-2= val
+                                    section
+                                        +skillSection('bi bi-geo', 'GIS', ['OSM Data Model', 'JOSM', 'iD', 'Vespucci', 'Merkaartor', 'QGIS', 'OSMCHa', 'Valhalla', 'OSRM', 'Overpass Turbo', 'Osmosis', 'HOT Tasking Manager', 'MapRoullete', 'LeafletJS', 'MaplibreJS'], 'mb-5')
+                                        +skillSection('bi bi-tools', 'Technical Skills', ['HTML', 'CSS', 'Markdown', 'SQL', 'RegExp', 'JSON', 'Yaml', 'JavaScript', 'Python', 'PostgreSQL', 'PostGIS', 'Git', 'Shell', 'Docker'], 'mb-5')
+                                        +skillSection('bi bi-people-fill', 'Team Work', ['Agile', 'Lean', 'Scrum', 'Jira', 'GitHub', 'Monday', 'Mode Analytics', 'Google Suite'], 'mb-5')
+                                        +skillSection('bi bi-sliders', 'Soft Skills', ['Problem Solving', 'Innovation', 'Strategic Thinking', 'Empathy', 'Design Thinking', 'Leadership', 'Collaboration'], 'mb-5')
+                                        +skillSection('bi bi-cash-coin', 'Economics', ['Business Planning', 'SWIFT', 'Wire Transfers', 'Accounting', 'Financial Planning', 'Reporting', 'Reuters Dealing', 'Forex', 'Money Market'], 'mb-0')
 
 
                         // Hobby Section
