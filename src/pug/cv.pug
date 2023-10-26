@@ -14,11 +14,11 @@ html(lang='en')
             include includes/navbar.pug
 
             // Page Content
-            .container.px-5.my-5
+            .container.px-3.my-5
                 .text-center.mb-5
                     h1.display-5.fw-bolder.mb-0
                         span.text-gradient.d-inline Curriculum Vitae
-                .row.gx-5.justify-content-center
+                .row.gx-1.justify-content-center
 
                     .col-lg-12.col-xl-11.col-xxl-10
 
@@ -169,7 +169,7 @@ html(lang='en')
                                     mixin skillSection(iconClass, title, skills, marginClass)
                                         div(class=marginClass)
                                             .d-flex.align-items-center.mb-4
-                                                .feature.bg-primary.bg-gradient-primary-to-secondary.text-white.rounded-3.me-3
+                                                .feature.bg-primary.bg-gradient-primary-to-secondary.text-white.rounded-3.me-3.col-1
                                                     i(class=iconClass)
                                                 h3.fw-bolder.mb-0
                                                     span.text-gradient.d-inline= title
