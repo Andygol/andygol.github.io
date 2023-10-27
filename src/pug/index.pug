@@ -27,7 +27,7 @@ html(lang='en')
                                     span.text-gradient.d-inline Understand how people and goods are moving around
                                 .d-grid.gap-3.d-sm-flex.justify-content-sm-center.justify-content-xxl-start.mb-3
                                     a.btn.btn-primary.btn-lg.px-5.py-3.fs-6.fw-bolder.me-sm-3(href='cv.html')          CV         
-                                    //- a.btn.btn-outline-dark.btn-lg.px-5.py-3.fs-6.fw-bolder(href='projects.html') Projects
+                                    a.btn.btn-outline-dark.btn-lg.px-5.py-3.fs-6.fw-bolder(href='contact.html') Contacts
                         .col-xxl-7
                             // Header profile picture
                             .d-flex.justify-content-center.mt-5.mt-xxl-0
@@ -58,15 +58,19 @@ html(lang='en')
                                 p.text-muted 8+ years of consultancy expertise in managing data workflows, protecting data integrity in OpenStreetMap, global navigation solutions, and optimizing customer satisfaction.
                                 p.text-muted 14+ years of expertise in OpenStreetMap data creation and modelling, quality assurance, community development.
                                 p.text-muted 15+ years of progressive banking experience, I have held various roles from trainee to department manager. My expertise spans Money Market and Forex, Correspondent Banking and Wire Transfers, as well as Financial Planning and Analytics.
+                                
+                                mixin contactLink(iconClass, url)
+                                    a.text-gradient(href=url)
+                                        i(class=iconClass)
+
                                 .d-flex.justify-content-center.fs-2.gap-4
-                                    a.text-gradient(href="https://x.com/andygol_") 
-                                        i.bi.bi-twitter-x
-                                    a.text-gradient(href="https://www.linkedin.com/in/andrii-holovin-b58201122/") 
-                                        i.bi.bi-linkedin
-                                    a.text-gradient(href="https://github.com/andygol") 
-                                        i.bi.bi-github
-                                    a.text-gradient(href="https://www.youtube.com/@AndriiHolovin") 
-                                        i.bi.bi-youtube
+                                    +contactLink('bi bi-linkedin', 'https://www.linkedin.com/in/andrii-holovin-b58201122/')
+                                    +contactLink('bi bi-github', 'https://github.com/andygol/')
+                                    +contactLink('bi bi-twitter-x', 'https://x.com/andygol_')
+                                    +contactLink('bi bi-cloud-sun', 'https://bsky.app/profile/andygol.bsky.social')
+                                    +contactLink('bi bi-globe-europe-africa', 'https://openstreetmap.org/user/andygol')
+                                    +contactLink('bi bi-youtube', 'https://www.youtube.com/@AndriiHolovin')
+
 
         // Footer
         include includes/footer.pug
