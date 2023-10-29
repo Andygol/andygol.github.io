@@ -21,6 +21,9 @@ jobs:
       - name: Install Dependencies
         run: npm install
 
+      - name: Set GA variable
+        run: echo "GA_ID=${{ vars.GA_ID }}" >> $GITHUB_ENV
+  
       - name: Build
         run: npm run build
 
