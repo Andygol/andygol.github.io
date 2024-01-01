@@ -1,6 +1,6 @@
 /*!
 * Start Bootstrap - Andrii Holovin personal website v1.0.3 (https://andygol.co.ua/)
-* Copyright 2013-2023 Start Bootstrap
+* Copyright 2013-2024 Start Bootstrap
 * Licensed under MIT (https://github.com/StartBootstrap/andrii-holovin-personal-website/blob/master/LICENSE)
 */
 // This file is intentionally blank
