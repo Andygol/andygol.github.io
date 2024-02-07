@@ -38,23 +38,23 @@ html(lang='en')
                                     .row.align-items-start.gx-5
                                         .col.text-center.text-lg-start.mb-4.mb-lg-0.p-0.p-md-4
                                             .bg-light.p-4.rounded-4
-                                                .text-primary.fw-bolder.mb-3 2023 - Present
-                                                .small.fw-bolder DevOps and Geospatial Expert | OpenStreetMap consultant
+                                                .text-primary.fw-bolder.mb-3 2014 - Present
+                                                .small.fw-bolder DevOps and Navigation Solutions Expert | OpenStreetMap consultant
                                                 .small.text-muted Dnipro, Ukraine
                                         .col-lg-8.p-0.p-md-4
                                             div 
-                                                h5 DevOps and Geospatial Expert
+                                                h5 DevOps Focus
+                                                p Diving into DevOps, I leverage Kubernetes, Helm, Flux, Terraform, and GitOps for streamlined collaboration. Committed to enhancing software development and deployment processes through Infrastructure as Code (IaC).
+                                                p Ready to embark on a new challenge—let's connect and explore synergies at the intersection of DevOps, geospatial data, and banking expertise!
+                                                h5 Navigation Solutions Expert
                                                 p With 9+ years in consultancy, I specialize in managing data workflows and ensuring OpenStreetMap's data integrity. Passionate about global navigation solutions, I optimize customer satisfaction through innovation.
                                                 p In my 15+ years, I've excelled in OpenStreetMap, quality assurance, and community development.
                                                 p Since 2009, my commitment to OpenStreetMap (OSM) has led me to consistently share experiences and develop expertise in GIS, communication, data analytics, product management, and documentation organization. I've facilitated global learning through workshops, presentations, and resources, including the standout
                                                     a(href="https://github.com/mapbox/mapping/tree/publisher-production/mapping-for-navigation/_posts/") “Mapping for Navigation” 
                                                     | guide.
-                                                h5 Global Education Impact, Leadership and Teaching
+                                                h5 Leadership and Teaching
                                                 p I've passionately educated team members, OSM community, students, and GIS enthusiasts globally. My adept communication skills enable me to convey complex ideas to diverse audiences, fostering a productive work environment.
                                                 p Combined with my leadership and teaching abilities, I maintain engagement, distribute work efficiently, and foster a harmonious work environment, resulting in exceptional results.
-                                                h5 DevOps Focus
-                                                p Diving into DevOps, I leverage Kubernetes, Helm, Flux, Terraform, and GitOps for streamlined collaboration. Committed to enhancing software development and deployment processes through Infrastructure as Code (IaC).
-                                                p Ready to embark on a new challenge—let's connect and explore synergies at the intersection of DevOps, geospatial data, and banking expertise!
 
                             // Experience Card 2
                             .card.shadow.border-0.rounded-4.mb-lg-5.mb-3
@@ -184,9 +184,9 @@ html(lang='en')
                                                 each val in skills 
                                                     .d-flex.align-items-center.bg-light.rounded-md-4.rounded-3.p-md-3.px-2.py-1.h-100.me-md-3.me-2.mb-md-3.mb-2= val
                                     section
+                                        +skillSection('bi bi-tools', 'Technical Skills', ['HTML', 'CSS', 'Markdown', 'SQL', 'RegExp', 'JSON', 'Yaml', 'JavaScript', 'Python', 'Shell', 'PostgreSQL', 'PostGIS', 'Git', 'Docker'], 'mb-5')
+                                        +skillSection('bi bi-hdd-network', 'DevOps Skills', ['Git', 'Docker', 'Kubernetes', 'Helm', 'FLux', 'ArgoCD', 'GitOps', 'Jenkins', 'Terraform', 'IaC', 'GCP', 'Linux', 'Shell', 'Python', 'CI/CD'], 'mb-5')
                                         +skillSection('bi bi-geo', 'GIS', ['OSM Data Model', 'JOSM', 'iD', 'Vespucci', 'Merkaartor', 'QGIS', 'OSMCHa', 'Valhalla', 'OSRM', 'Overpass Turbo', 'Osmosis', 'HOT Tasking Manager', 'MapRoullete', 'LeafletJS', 'MaplibreJS'], 'mb-5')
-                                        +skillSection('bi bi-tools', 'Technical Skills', ['HTML', 'CSS', 'Markdown', 'SQL', 'RegExp', 'JSON', 'Yaml', 'JavaScript', 'Python', 'PostgreSQL', 'PostGIS', 'Git', 'Shell', 'Docker'], 'mb-5')
-                                        +skillSection('bi bi-hdd-network', 'DevOps Skills', ['Git', 'Docker', 'Shell', 'Kubernetes', 'Helm', 'FLux', 'ArgoCD', 'Jenkins', 'Terraform', 'IaC', 'GCP', 'Linux', 'Python', 'Bash', 'CI/CD'], 'mb-5')
                                         +skillSection('bi bi-people-fill', 'Team Work', ['Agile', 'Lean', 'Scrum', 'Jira', 'GitHub', 'Monday', 'Mode Analytics', 'Google Suite'], 'mb-5')
                                         +skillSection('bi bi-sliders', 'Soft Skills', ['Problem Solving', 'Innovation', 'Strategic Thinking', 'Empathy', 'Design Thinking', 'Leadership', 'Collaboration'], 'mb-5')
                                         +skillSection('bi bi-cash-coin', 'Economics', ['Business Planning', 'SWIFT', 'Wire Transfers', 'Accounting', 'Financial Planning', 'Reporting', 'Reuters Dealing', 'Forex', 'Money Market'], 'mb-0')
