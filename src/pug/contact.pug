@@ -24,21 +24,26 @@ html(lang='en')
 
                             h1.fw-bolder Get in touch
                             p.lead.fw-normal.text-muted.mb-0 Let's work together!
-                            
+
                             mixin contactLink(iconClass, nickName, url)
+                                - const icon = icons[iconClass]
                                 a.btn.btn-outline-primary.btn-lg.mb-md-3.p-2.p-md-3.fs-4.fw-bolder.me-sm-3(href=url)
                                     div.text-nowrap.text-start.overflow-hidden
-                                        .feature.bg-primary.bg-gradient-primary-to-secondary.text-white.rounded-3.col-1
-                                            i(class=iconClass)
-                                        span.ms-1= nickName
+                                        .feature.bg-primary.bg-gradient-primary-to-secondary.rounded-3.col-1.align-middle
+                                            if icon 
+                                                //- i(class=iconClass)
+                                                svg.fill-wihte.p-2!= icon.svg
+                                            else
+                                                i(class=iconClass)
+                                        span.ms-1.align-middle= nickName
 
                             .d-grid.gap-1.d-flex.flex-column.flex-md-row.flex-md-wrap.justify-content-center.my-3
-                                +contactLink('bi bi-linkedin', 'andygol', 'https://www.linkedin.com/in/andygol/')
-                                +contactLink('bi bi-github', 'Andygol', 'https://github.com/andygol/')
-                                +contactLink('bi bi-twitter-x', 'andygol_', 'https://x.com/andygol_')
-                                +contactLink('bi bi-cloud-sun', 'andygol.bsky.social', 'https://bsky.app/profile/andygol.bsky.social')
-                                +contactLink('bi bi-globe-europe-africa', 'osm.org/andygol', 'https://openstreetmap.org/user/andygol')
-                                +contactLink('bi bi-youtube', 'AndriiHolovin', 'https://www.youtube.com/@AndriiHolovin')
+                                +contactLink('siLinkedin', 'andygol', 'https://www.linkedin.com/in/andygol/')
+                                +contactLink('siGithub', 'Andygol', 'https://github.com/andygol/')
+                                +contactLink('siX', 'andygol_', 'https://x.com/andygol_')
+                                +contactLink('siBluesky', 'andygol.bsky.social', 'https://bsky.app/profile/andygol.bsky.social')
+                                +contactLink('siOpenstreetmap', 'osm.org/andygol', 'https://openstreetmap.org/user/andygol')
+                                +contactLink('siYoutube', 'AndriiHolovin', 'https://www.youtube.com/@AndriiHolovin')
 
         // Footer
         include includes/footer.pug
