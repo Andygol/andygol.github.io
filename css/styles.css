@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /*!
-* Start Bootstrap - Andrii Holovin personal website v1.0.3 (https://andygol.co.ua/)
+* Start Bootstrap - Andrii Holovin personal website v1.1.0 (https://andygol.co.ua/)
 * Copyright 2013-2024 Start Bootstrap
 * Licensed under MIT (https://github.com/StartBootstrap/andrii-holovin-personal-website/blob/master/LICENSE)
 */
@@ -12724,6 +12724,13 @@ html {
   font-size: 1.5rem;
 }
 
+a .feature {
+  transition: box-shadow 0.3s ease;
+}
+a .feature:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
 .profile {
   position: relative;
   height: 75vw;
@@ -12877,4 +12884,12 @@ html {
     width: 1.5vw;
     left: -2vw;
   }
+}
+svg {
+  width: 3rem;
+  height: 3rem;
+}
+
+.fill-wihte svg {
+  fill: white;
 }
