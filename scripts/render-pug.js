@@ -4,6 +4,7 @@ const upath = require('upath');
 const pug = require('pug');
 const sh = require('shelljs');
 const prettier = require('prettier');
+const SimplIcons = require('simple-icons');
 
 module.exports = async function renderPug(filePath) {
     const destPath = filePath.replace(/src\/pug\//, 'dist/').replace(/\.pug$/, '.html');
@@ -13,7 +14,8 @@ module.exports = async function renderPug(filePath) {
     const html = pug.renderFile(filePath, {
         doctype: 'html',
         filename: filePath,
-        basedir: srcPath
+        basedir: srcPath,
+        icons: SimplIcons
     });
 
     const destPathDirname = upath.dirname(destPath);

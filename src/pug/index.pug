@@ -62,17 +62,23 @@ html(lang='en')
                                 p.text-muted My banking career spans Money Market, Forex, Correspondent Banking, and Financial Planning. 
                                 p.text-muted Diving into DevOps, I leverage Kubernetes, Helm, Flux, Terraform, and GitOps for streamlined collaboration. Committed to enhancing software development and deployment processes through Infrastructure as Code (IaC).
                                 
-                                mixin contactLink(iconClass, url)
-                                    a.text-gradient(href=url)
-                                        i(class=iconClass)
+                                mixin contactLink(iconName, url)
+                                    - const icon = icons[iconName]
+                                        a.text-gradient(href=url)
+                                            .feature.bg-primary.bg-gradient-primary-to-secondary.rounded-3.col-1.fill-wihte
+                                                if icon
+                                                    svg.p-2!= icon.svg
+                                                else
+                                                    span= iconName
 
-                                .d-flex.justify-content-center.fs-2.gap-4
-                                    +contactLink('bi bi-linkedin', 'https://www.linkedin.com/in/andrii-holovin-b58201122/')
-                                    +contactLink('bi bi-github', 'https://github.com/andygol/')
-                                    +contactLink('bi bi-twitter-x', 'https://x.com/andygol_')
-                                    +contactLink('bi bi-cloud-sun', 'https://bsky.app/profile/andygol.bsky.social')
-                                    +contactLink('bi bi-globe-europe-africa', 'https://openstreetmap.org/user/andygol')
-                                    +contactLink('bi bi-youtube', 'https://www.youtube.com/@AndriiHolovin')
+
+                                .d-grid.gap-3.pt-5.d-flex.flex-row.flex-wrap.justify-content-center
+                                    +contactLink('siLinkedin', 'https://www.linkedin.com/in/andrii-holovin-b58201122/')
+                                    +contactLink('siGithub', 'https://github.com/andygol/')
+                                    +contactLink('siX', 'https://x.com/andygol_')
+                                    +contactLink('siBluesky', 'https://bsky.app/profile/andygol.bsky.social')
+                                    +contactLink('siOpenstreetmap', 'https://openstreetmap.org/user/andygol')
+                                    +contactLink('siYoutube', 'https://www.youtube.com/@AndriiHolovin')
 
 
         // Footer
