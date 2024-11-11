@@ -23,12 +23,12 @@ html(lang='en')
                     .col-lg-12.col-xl-11.col-xxl-10
 
                         // Experience Section
-                        section
+                        section(id='experience')
                             .d-flex.align-items-center.justify-content-between.mb-4
-                                h2.text-primary.fw-bolder.mb-0 Experience
+                                a(href="#experience").text-decoration-none.h2.text-primary.fw-bolder.mb-0 Experience
                                 // Download resume button
                                 // Note: Set the link href target to a PDF file within your project
-                                a.btn.btn-primary.px-4.py-3(href='https://docs.google.com/document/d/1zSh1WoC4Uf64M9HPFnXlQl5JdVKRtl2GVSTP804E3CI/edit?usp=sharing')
+                                a.btn.btn-primary.px-4.py-3(href='https://docs.google.com/document/d/1zSh1WoC4Uf64M9HPFnXlQl5JdVKRtl2GVSTP804E3CI/edit?usp=sharing' id='download-resume')
                                     .d-inline-block.bi.bi-download.me-2
                                     | Download CV
 
@@ -42,20 +42,32 @@ html(lang='en')
                                                 .small.fw-bolder Project & Product Management consultancy | DevOps and Navigation Solutions Expert
                                                 .small.text-muted Dnipro, Ukraine
                                         .col-lg-8.p-0.p-md-4
-                                            div 
+                                            div
                                                 h5 Project & Product Management consultancy | Navigation Solutions Expert
                                                 p With 9+ years in Project & Product Management consultancy, I specialize in managing data workflows and ensuring OpenStreetMap's data integrity. Passionate about global navigation solutions, I optimize customer satisfaction through innovation.
                                                 p In my 15+ years, I've excelled in OpenStreetMap, quality assurance, and community development.
                                                 p Since 2009, my commitment to OpenStreetMap (OSM) has led me to consistently share experiences and develop expertise in GIS, communication, data analytics, product management, and documentation organization. I've facilitated global learning through workshops, presentations, and resources, including the standout
-                                                    a(href="https://github.com/mapbox/mapping/tree/publisher-production/mapping-for-navigation/_posts/") “Mapping for Navigation” 
+                                                    a(href="https://github.com/mapbox/mapping/tree/publisher-production/mapping-for-navigation/_posts/")
+                                                        strong “Mapping for Navigation”
                                                     | guide.
+
                                                 h5 DevOps Focus
-                                                p Diving into DevOps, I leverage Kubernetes, Helm, Flux, Terraform, and GitOps for streamlined collaboration. Committed to enhancing software development and deployment processes through Infrastructure as Code (IaC).
-                                                p Ready to embark on a new challenge—let's connect and explore synergies at the intersection of DevOps, geospatial data, and banking expertise!
+                                                p Diving into DevOps, I leverage Kubernetes, Helm, Flux, Terraform, and GitOps for streamlined collaboration. Committed to enhancing software development and deployment processes through Infrastructure as Code (IaC). To achieve mutual understanding between different teams in the development and operation process, I have translated and keep up-to-date the documentation of
+                                                    a(href="https://www.linkedin.com/posts/istio_крига-скресла-після-тривалого-процесу-розгляду-activity-7260406545211940864-Q2Dz/" target="_blank")
+                                                        strong Istio
+                                                    |,
+                                                    a(href="https://andygol-helm.netlify.app/uk/" target="_balnk")
+                                                        strong Helm
+                                                    |,
+                                                    a(href="https://andygol-k8s.netlify.app/uk/" target="_balnk")
+                                                        strong Kubernetes
+                                                    |, and other tools into Ukrainian.
+
                                                 h5 Leadership and Teaching
                                                 p I've passionately educated team members, OSM community, students, and GIS enthusiasts globally. My adept communication skills enable me to convey complex ideas to diverse audiences, fostering a productive work environment.
                                                 p Combined with my leadership and teaching abilities, I maintain engagement, distribute work efficiently, and foster a harmonious work environment, resulting in exceptional results.
 
+                                                p Ready to embark on a new challenge—let's connect and explore synergies at the intersection of Product & Project management, DevOps, geospatial data, and banking expertise!
                             // Experience Card 2
                             .card.shadow.border-0.rounded-4.mb-lg-5.mb-3
                                 .card-body.p-5.py-4
@@ -68,19 +80,19 @@ html(lang='en')
                                                 .small.text-muted Washington, DC
                                         .col-lg-8.p-0.p-md-4
                                             div
-                                                
-                                                h5 Map & Navigation Feedback 
+
+                                                h5 Map & Navigation Feedback
                                                 p Established and fine-tuned a workflow for customers feedback review associated with map data issues. 99.8% of issues are resolved within 7 days.
                                                 p Highlighted and structured an elimination process of weak spots in navigation services for their further improvements.
                                                 p Enhanced a proactive issue resolution pipeline within the navigation data to reduce incidence of customers feedback pertaining to navigation.
                                                 p Forwarded major tool improvements that increased Streets Review, Mapbox Contribute, Navigation Feedback teams productivity.
-                                                
+
                                                 h5 Vandalism Eradication
                                                 p Prevented leaks of inappropriate changes from OSM to Mapbox Streets map using internal false-positive probes to test team performance and attentiveness. Attained an impressive team accuracy score of 98% while also maintaining a stringent data review timeline of one week for published content.
-                                                p Improved the review workflow for incoming OSM edits that put an end to a 6-months review backlog. Review rate per team member sky-rocketed from 2&nbsp;000 to 12&nbsp;000 views per day during 1 month. 
+                                                p Improved the review workflow for incoming OSM edits that put an end to a 6-months review backlog. Review rate per team member sky-rocketed from 2&nbsp;000 to 12&nbsp;000 views per day during 1 month.
 
                                                 h5 Internal & External Data Analysis
-                                                p Created and optimised high precision dashboards for tracking KPIs and SLAs. 
+                                                p Created and optimised high precision dashboards for tracking KPIs and SLAs.
                                                 p Performed an extensive research on OSM data suitability for navigation services comparing with other navigation service providers.
                                                 p Conducted private navigation A/B tests for high priority customers.
                                                 p Developed a comprehensive workflow for efficiently triaging incoming issues, distributing them among respective teams, and monitoring teams performance.
@@ -122,8 +134,8 @@ html(lang='en')
                                                 .small.text-muted Dnipro, Ukraine
                                         .col-lg-8.p-0.p-md-4
                                             div
-                                                p Established relationships with bank-correspondents. 
-                                                p Managed correspondent accounts and registered them in the National Bank of Ukraine. 
+                                                p Established relationships with bank-correspondents.
+                                                p Managed correspondent accounts and registered them in the National Bank of Ukraine.
                                                 p Arranged wire transfers via messages of 1,2,3,9 SWIFT categories.
                                                 p Investigated payments processing for bank-correspondents.
                                                 p Communicated with the banks-correspondents concerning processing clients' wire transfers.
@@ -142,10 +154,54 @@ html(lang='en')
                                         .col-lg-8.p-0.p-md-4
                                             div 15+ years of progressive banking experience, I have held various roles from trainee to department manager. My expertise spans Money Market and Forex, Correspondent Banking and Wire Transfers, as well as Financial Planning and Analytics.
 
+                        // Lisenses & Certifications Section
+                        section(id='sertificates')
+                            a(href="#sertificates").text-decoration-none.h2.text-primary.fw-bolder.mb-4 Licenses & Certifications
+
+                            mixin certificationCard(date, institution, title, credentialID, credentialURL, skills)
+                                .card.shadow.border-0.rounded-4.mb-lg-5.mb-3
+                                    .card-body.p-5.py-4
+                                        .row.align-items-start.gx-5
+                                            .col.text-center.text-lg-start.mb-4.mb-lg-0.p-0.p-md-4
+                                                .bg-light.p-4.rounded-4
+                                                    .text.fw-bolder.mb-3= institution
+                                                    .mb-2
+                                                        .text-secondary.small.fw-bolder= date
+                                            .col-lg-8.p-0.p-md-4
+                                                div
+                                                    strong= title
+                                                    .fst-italic
+                                                        .small.text-muted Credential ID: #{credentialID}
+                                                    a.my-3.btn.btn-outline-dark.d-inline-flex.align-items-center(href=credentialURL target="_blank")
+                                                        | Show credential
+                                                        i.bi.bi-box-arrow-up-right.ms-2
+                                                    if skills
+                                                        p.p-mb-3
+                                                        strong Skills:
+                                                        |  #{skills}
+
+                            +certificationCard('Sep 2024', 'Google Cloud Skills Boost', 'Deploy Kubernetes Applications on Google Cloud', '11628989', 'https://www.cloudskillsboost.google/public_profiles/9e97fbf0-8025-448e-9672-a4c4357f69f4/badges/11628989', 'Artifact Registry, Container, Docker, GKE')
+                            +certificationCard('Mar 2024', 'Google Cloud Skills Boost', 'Build Infrastructure with Terraform on Google Cloud', '8289644', 'https://www.cloudskillsboost.google/public_profiles/9e97fbf0-8025-448e-9672-a4c4357f69f4/badges/8289644', 'Google Cloud Platform (GCP), Infrastructure as Code (IaC), Terraform')
+                            +certificationCard('Mar 2024', 'Google Cloud Skills Boost', 'Monitor and Log with Google Cloud Observability', '8287298', 'https://www.cloudskillsboost.google/public_profiles/9e97fbf0-8025-448e-9672-a4c4357f69f4/badges/8287298', 'Alerts, Cloud Functions, Compute Engine, Dashboard, Logging, Monitoring')
+                            +certificationCard('Mar 2024', 'Google Cloud Skills Boost', 'Implement DevOps Workflows in Google Cloud', '8276895', 'https://www.cloudskillsboost.google/public_profiles/9e97fbf0-8025-448e-9672-a4c4357f69f4/badges/8276895', 'Artifact Registry, CI/CD, Cloud Build, Cloud Source Repositories, DevOps, Git, GKE')
+                            +certificationCard('Mar 2024', 'Google Cloud Skills Boost', 'Set Up an App Dev Environment on Google Cloud', '8251270', 'https://www.cloudskillsboost.google/public_profiles/9e97fbf0-8025-448e-9672-a4c4357f69f4/badges/8251270', 'Cloud Functions, Cloud Storage, IAM, Monitoring, Pub/sub')
+                            +certificationCard('Mar 2024', 'University of Michigan', 'Applied Plotting, Charting & Data Representation in Python', 'RPSMUGXP4VER', 'https://coursera.org/account/accomplishments/certificate/RPSMUGXP4VER')
+                            +certificationCard('Mar 2024', 'University of Michigan', 'Introduction to Data Science in Python', 'WKUYAJS24TJU', 'https://coursera.org/account/accomplishments/certificate/WKUYAJS24TJU', 'Python, Pandas, NumPy, Matplotlib, Jupiter Notebook, Data Science, Data Analysis, Data Visualization, Data Cleaning, Data Wrangling, Data Preprocessing, Data Manipulation')
+                            +certificationCard('Sep 2023', 'Google', 'Google Project Management', 'TBQ8S3ZN8GYV', 'https://www.coursera.org/account/accomplishments/specialization/certificate/TBQ8S3ZN8GYV', 'Agile Project Management, Budgeting And Procurement, Effective Communication, Process Improvement, Project Management, Project Scoping And Planning, Risk Management, Stakeholder Management, Work Management Tools')
+                            +certificationCard('Jul 2023', 'Atlassian University', 'Agile with Atlassian Jira', '8X27L4NH23VM', 'https://www.coursera.org/account/accomplishments/certificate/8X27L4NH23VM', 'Agile, Scrum, Kanban, Jira, Confluence, Team management, Project management, Software development, Software testing, Software maintenance')
+                            +certificationCard('Jul 2023', 'University of Virginia Darden School of Business', 'Fundamentals of Project Planning and Management', 'CSUFG9A4VPYR', 'https://www.coursera.org/account/accomplishments/certificate/CSUFG9A4VPYR', 'Project Management, Project Planning, Project Execution, Project Monitoring and Control, Project Closure, Project Scoping and Planing, Project Scheduling, Risk Management, Communication, Stakeholder Management')
+                            +certificationCard('Jul 2023', 'The Linux Foundation | Cloud Native Computer Foundation', 'Git for distributed software development | Git для розподіленої розробки програмного забезпечення', 'eaa8fc8e88fc4196a24ce05d77a3eb03', 'https://certs.prometheus.org.ua/downloads/1106824522474051ab2043ebf6b43444/Certificate.pdf', 'Git, Distributed Development, Software Development, Version Control')
+                            +certificationCard('Jun 2023', 'The Linux Foundation | Cloud Native Computer Foundation', 'Introduction to Linux | Основи Linux', '46b6520d94cf4d4995126ea731c221d2', 'https://certs.prometheus.org.ua/downloads/46b6520d94cf4d4995126ea731c221d2/Certificate.pdf', 'Linux, Command Line, Shell, Linux File System, Linux Permissions, Linux Networking, Linux Software Management, Linux Processes, Linux File Searching, Linux File Transfer, Linux User Environment, Linux System Environment,  Linux Security, Linux System Management')
+                            +certificationCard('Jun 2023', 'The Linux Foundation | Cloud Native Computer Foundation', 'Introduction to Kubernetes | Основи Kubernetes', 'e7898ab3d2574cc6b908a39846c3a762', 'https://certs.prometheus.org.ua/downloads/e7898ab3d2574cc6b908a39846c3a762/Certificate.pdf', 'Kubernetes, Containers, Orchestration, Kubernetes Architecture, Kubernetes Installation, Kubernetes Networking, Kubernetes Storage, Kubernetes Security, Kubernetes Monitoring, Kubernetes Logging, Kubernetes Troubleshooting, Kubernetes Application Lifecycle Management')
+                            +certificationCard('Feb 2023', 'LinkedIn Learning', 'What is Business Analysis?', 'dbc925eea4dc38e00bb14bc881e8deef35b2b4823414cc6b7691adb13ce65b75', 'https://www.linkedin.com/learning/certificates/dbc925eea4dc38e00bb14bc881e8deef35b2b4823414cc6b7691adb13ce65b75', 'Business Analysis')
+                            +certificationCard('Jan 2016', 'Lviv IT School', 'Fundamentals of Web UI development | Основи Web UI розробки', '22d2ca2bbe1c49a6a433fcf6473e4f95', 'https://certs.prometheus.org.ua/downloads/22d2ca2bbe1c49a6a433fcf6473e4f95/Certificate.pdf')
+
+
+
                         // Education Section
-                        section
-                            h2.text-secondary.fw-bolder.mb-4 Education
-                            
+                        section(id='education')
+                            a(href="#education").text-decoration-none.h2.text-secondary.fw-bolder.mb-4 Education
+
                             // Education Card 1
                             .card.shadow.border-0.rounded-4.mb-lg-5.mb-3
                                 .card-body.p-5.py-4
@@ -167,12 +223,12 @@ html(lang='en')
                         .pb-5
 
                         // Skills Section
-                        section
-                            h2.text-primary.fw-bolder.mb-4 Skills & Knowledge
+                        section(id='skills')
+                            a(href="#skills").text-decoration-none.h2.text-primary.fw-bolder.mb-4 Skills & Knowledge
                             // Skillset Card
                             .card.shadow.border-0.rounded-4.mb-lg-5.mb-3
                                 .card-body.p-4.p-md-5
-                                
+
                                     mixin skillSection(iconClass, title, skills, marginClass)
                                         div(class=marginClass)
                                             .d-flex.align-items-center.mb-4
@@ -181,62 +237,62 @@ html(lang='en')
                                                 h3.fw-bolder.mb-0
                                                     span.text-gradient.d-inline= title
                                             .d-flex.flex-wrap.mb-3
-                                                each val in skills 
+                                                each val in skills
                                                     .d-flex.align-items-center.bg-light.rounded-md-4.rounded-3.p-md-3.px-2.py-1.h-100.me-md-3.me-2.mb-md-3.mb-2= val
                                     section
                                         +skillSection('bi bi-people-fill', 'Team Work', ['Agile', 'Lean', 'Scrum', 'Jira', 'GitHub', 'Monday', 'Mode Analytics', 'Google Suite'], 'mb-5')
                                         +skillSection('bi bi-sliders', 'Soft Skills', ['Problem Solving', 'Innovation', 'Strategic Thinking', 'Empathy', 'Design Thinking', 'Leadership', 'Collaboration'], 'mb-5')
                                         +skillSection('bi bi-tools', 'Technical Skills', ['HTML', 'CSS', 'Markdown', 'SQL', 'RegExp', 'JSON', 'Yaml', 'JavaScript', 'Python', 'PostgreSQL', 'PostGIS', 'Git', 'Shell', 'Docker'], 'mb-5')
                                         +skillSection('bi bi-geo', 'GIS', ['OSM Data Model', 'JOSM', 'iD', 'Vespucci', 'Merkaartor', 'QGIS', 'OSMCHa', 'Valhalla', 'OSRM', 'Overpass Turbo', 'Osmosis', 'HOT Tasking Manager', 'MapRoullete', 'LeafletJS', 'MaplibreJS'], 'mb-5')
-                                        +skillSection('bi bi-hdd-network', 'DevOps Skills', ['Git', 'Docker', 'Kubernetes', 'Helm', 'FLux', 'ArgoCD', 'GitOps', 'Terraform', 'IaC', 'GCP', 'Linux', 'Shell', 'Python', 'CI/CD'], 'mb-5')
+                                        +skillSection('bi bi-hdd-network', 'DevOps Skills', ['Git', 'Docker', 'Kubernetes', 'Helm', 'Istio', 'FLux', 'ArgoCD', 'GitOps', 'Terraform', 'IaC', 'GCP', 'Linux', 'Shell', 'Python', 'CI/CD'], 'mb-5')
                                         +skillSection('bi bi-cash-coin', 'Economics', ['Business Planning', 'SWIFT', 'Wire Transfers', 'Accounting', 'Financial Planning', 'Reporting', 'Reuters Dealing', 'Forex', 'Money Market'], 'mb-0')
-                                        +skillSection('bi bi-translate', 'Language Proficiency', ['English﹒C1', 'Ukrainian﹒C2', 'Russian﹒C2'], 'mb-0')
+                                        +skillSection('bi bi-translate', 'Language Proficiency', ['English · C1', 'Ukrainian · C2', 'Russian · C2'], 'mb-0')
 
 
                         // Hobby Section
-                        section
+                        section(id='hobbies')
                             .d-flex.align-items-center.justify-content-between.mb-4
-                                h2.text-gradient.fw-bolder.mb-0 Hobbies and Volunteering
+                                a(href="#hobbies").text-decoration-none.h2.text-gradient.fw-bolder.mb-0 Hobbies and Volunteering
 
                             // Hobby Card 1
                             .card.shadow.border-0.rounded-4.mb-0
                                 .card-body.p-4.p-md-5
                                     .row.align-items-start.gx-5
-                                        div 
-                                            
+                                        div
+
                                             h5 OpenStreetMap – global free editable map
-                                            p I am a long-time contributor to the 
+                                            p I am a long-time contributor to the
                                                 a(href="https://openstreetmap.org/") OpenStreetMap
-                                                | project. I not only participate in adding new data and updating existing information, but also put a lot of effort into localising tools and documentation into Ukrainian to attract more participants from Ukraine. I translated and maintained the interfaces of such editors as 
+                                                | project. I not only participate in adding new data and updating existing information, but also put a lot of effort into localising tools and documentation into Ukrainian to attract more participants from Ukraine. I translated and maintained the interfaces of such editors as
                                                 a(href="https://ideditor.org/") iD
-                                                | and 
+                                                | and
                                                 a(href="https://josm.openstreetmap.de/") JOSM
-                                                |, translated the documentation in the OSM Wiki, and helped in the preparation of issues for the 
+                                                |, translated the documentation in the OSM Wiki, and helped in the preparation of issues for the
                                                 a(href="https://weeklyosm.eu/uk") weeklyOSM
-                                                |. In addition, I created a website for the 
+                                                |. In addition, I created a website for the
                                                 a(href="https://openstreetmap.org.ua") Ukrainian OpenStreetMap Community
                                                 | and helped to establish cooperation with corporate users, one of whom created and maintains a tile server for use in Ukraine.
-                                            p However, my efforts are not limited to the Ukrainian community. I have updated and offered to the community site that facilitates the wide dissemination of 
+                                            p However, my efforts are not limited to the Ukrainian community. I have updated and offered to the community site that facilitates the wide dissemination of
                                                 a(href="https://andygol.co.ua/welcome-mat-osmf/") information about the project
-                                                | and 
+                                                | and
                                                 a(href="https://andygol.co.ua/switch2osm-mkdocs/") Switch2OSM
                                                 |, guidance on the transition to using OpenStreetMap.
 
                                             h5 3D Modeling and Printing
-                                            p 3D printing became my hobby not long ago. I documented my first steps in this hobby on my 
+                                            p 3D printing became my hobby not long ago. I documented my first steps in this hobby on my
                                                 a(href="https://www.youtube.com/@AndriiHolovin") YouTube channel
-                                                |. I also made efforts to localise 
+                                                |. I also made efforts to localise
                                                 a(href="https://snapmaker.com/snapmaker-luban") Luban
                                                 |slicer to 100% in Ukrainian. Not only the interface was localised, but also the built-in help.
-                                            p I have a universal 3D printer that also has a laser for cutting and engraving. And I managed to cut a model of the landscape of the island from plywood, see more about it 
+                                            p I have a universal 3D printer that also has a laser for cutting and engraving. And I managed to cut a model of the landscape of the island from plywood, see more about it
                                                 a(href="https://blog.andygol.co.ua/en/2022/02/10/making-a-model-of-an-island-using-plywood/") here
                                                 |.
 
                                             h5 Other Hobbies and Skills
-                                            p 
+                                            p
                                                 a(href="https://twitter.com/andygol_/status/1563519727133401089") Building marble machines
                                                 |, cross stitching, crocheting, knitting, translation of free software to Ukrainian, photography…
-                                            p BC driver's licence, over 20 years accident free driving experience.
+                                            p BC driver’s licence holder with a longstanding record of safe, accident-free driving experience.
 
         // Footer
         include includes/footer.pug

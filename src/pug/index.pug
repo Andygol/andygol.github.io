@@ -24,10 +24,10 @@ html(lang='en')
                                     .text-uppercase &middot; Manage &middot; Lead &middot; Cooperate &middot;
                                 .fs-3.fw-light.text-muted I can help your business to
                                 h1.display-3.fw-bolder.mb-5
-                                    span.text-gradient.d-inline Understand how people and goods are moving around
-                                .d-grid.gap-3.d-sm-flex.justify-content-sm-center.justify-content-xxl-start.mb-3
-                                    a.btn.btn-primary.btn-lg.px-5.py-3.fs-6.fw-bolder.me-sm-3(href='cv.html')          CV         
-                                    a.btn.btn-outline-dark.btn-lg.px-5.py-3.fs-6.fw-bolder(href='contact.html') Contacts
+                                    span.text-gradient.d-inline Understand how people, goods, and data are moving around
+                                .d-grid.gap-3.d-sm-flex.justify-content-sm-center.justify-content-xxl-start.mb-3.mx-auto
+                                    a.btn.btn-primary.btn-lg.py-3.fs-6.fw-bolder.col-sm-4.col-lg-3.col-xl-2.col-xxl-5(href='cv.html') CV
+                                    a.btn.btn-outline-dark.btn-lg.py-3.fs-6.fw-bolder.col-sm-4.col-lg-3.col-xl-2.col-xxl-5(href='contact.html') Contacts
                         .col-xxl-7
                             // Header profile picture
                             .d-flex.justify-content-center.mt-5.mt-xxl-0
@@ -58,10 +58,19 @@ html(lang='en')
                                     span.text-primary.d-inline Geospatial Expert
                             .text-left.my-5
                                 p.text-muted With 9+ years of Project & Product Management consultancy, I specialize in managing data workflows and ensuring OpenStreetMap's data integrity. Passionate about global navigation solutions, I optimize customer satisfaction through innovation.
-                                p.text-muted In my 15+ years, I've excelled in OpenStreetMap, quality assurance, and community development. 
-                                p.text-muted My banking career spans Money Market, Forex, Correspondent Banking, and Financial Planning. 
-                                p.text-muted Diving into DevOps, I leverage Kubernetes, Helm, Flux, Terraform, and GitOps for streamlined collaboration. Committed to enhancing software development and deployment processes through Infrastructure as Code (IaC).
-                                
+                                p.text-muted In my 15+ years, I've excelled in OpenStreetMap, quality assurance, and community development.
+                                p.text-muted My banking career spans Money Market, Forex, Correspondent Banking, and Financial Planning.
+                                p.text-muted By adopting DevOps methodology, I facilitate streamlined collaboration through the use of Kubernetes, Helm, Flux, Terraform, and GitOps. I am dedicated to optimising software development and deployment processes through the implementation of Infrastructure as Code (IaC). I translate
+                                    a(href="https://www.linkedin.com/posts/istio_крига-скресла-після-тривалого-процесу-розгляду-activity-7260406545211940864-Q2Dz/" target="_blank")
+                                        strong Istio
+                                    |,
+                                    a(href="https://andygol-helm.netlify.app/uk/" target="_balnk")
+                                        strong Helm
+                                    | and
+                                    a(href="https://andygol-k8s.netlify.app/uk/" target="_balnk")
+                                        strong Kubernetes
+                                    | documentation into Ukrainian.
+
                                 mixin contactLink(iconName, url)
                                     - const icon = icons[iconName]
                                         a.text-gradient(href=url)
