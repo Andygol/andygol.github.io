@@ -15,7 +15,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="My name is Andrii Holovin and I help brands grow. 9+ years of Project &amp; Product Management consultancy expertise in managing data workflows, protecting data integrity in OpenStreetMap, global navigation solutions, and optimizing customer satisfaction. 15+ years of expertise in OpenStreetMap data creation and modelling, quality assurance, community development. 15+ years of progressive banking experience, I have held various roles from trainee to department manager. My expertise spans Money Market and Forex, Correspondent Banking and Wire Transfers, as well as Financial Planning and Analytics." />
         <meta name="author" content="Andrii Holovin" />
-        <meta name="keywords" content="GIS, ГІС, Andrii Holovin, Андрій Головін, OSM, OpenStreetMap, project, product, scrum, agile, DevOps, CI, CD, GitOps, k8s, documentation, IaC, Terraform, Helm, Flux, Kubernetes, banking, finance, money market, forex, correspondent banking, wire transfers, financial planning, analytics, data, data integrity, data workflows, data modelling, data science, global navigation solutions, customer satisfaction, innovation, quality assurance, community development, software, translation, localization, Ukrainian, English" />
+        <meta name="keywords" content="GIS, ГІС, Andrii Holovin, Андрій Головін, OSM, OpenStreetMap, project, product, scrum, agile, DevOps, CI, CD, GitOps, k8s, documentation, IaC, Terraform, Helm, Flux, Istio, Kubernetes, banking, finance, money market, forex, correspondent banking, wire transfers, financial planning, analytics, data, data integrity, data workflows, data modelling, data science, global navigation solutions, customer satisfaction, innovation, quality assurance, community development, software, translation, localization, Ukrainian, English" />
         <meta name="robots" content="index,follow" />
         <meta naem="title" content="Andrii Holovin" />
         <title>Andrii Holovin</title>
@@ -43,39 +43,119 @@
                             <li class="nav-item h4"><a class="nav-link" href="index.html">Home</a></li>
                             <li class="nav-item h4"><a class="nav-link" href="cv.html">CV</a></li>
                             <li class="nav-item h4"><a class="nav-link" href="contact.html">Contact</a></li>
+                            <li class="nav-item h4"><a class="nav-link" href="projects.html">Projects</a></li>
                         </ul>
                     </div>
                 </div>
             </nav>
             <!-- Projects Section-->
             <section class="py-5">
-                <div class="container px-5 mb-5">
+                <div class="container px-3 my-5">
                     <div class="text-center mb-5">
                         <h1 class="display-5 fw-bolder mb-0"><span class="text-gradient d-inline">Projects</span></h1>
                     </div>
                     <div class="row gx-5 justify-content-center">
-                        <div class="col-lg-11 col-xl-9 col-xxl-8">
-                            <!-- Project Card 1-->
+                        <div class="col-md-11 col-lg-11 col-xl-9 col-xxl-8">
+                            <!-- Project Card Isio Service Mesh-->
                             <div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
                                 <div class="card-body p-0">
-                                    <div class="d-flex align-items-center">
-                                        <div class="p-5">
-                                            <h2 class="fw-bolder">Project Name 1</h2>
-                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius at enim eum illum aperiam placeat esse? Mollitia omnis minima saepe recusandae libero, iste ad asperiores! Explicabo commodi quo itaque! Ipsam!</p>
+                                    <div class="d-flex flex-column flex-md-row align-items-start">
+                                        <div class="p-5 col-12 col-md-6">
+                                            <h2 class="fw-bolder">Istio</h2>
+                                            <p>
+                                                Istio is an open platform for connecting, managing, and securing microservices, making it easy to build secure and reliable cloud workloads, with or without sidecars. I have
+                                                <a href="https://www.linkedin.com/posts/istio_крига-скресла-після-тривалого-процесу-розгляду-activity-7260406545211940864-Q2Dz/" target="_blank">localized the Istio mesh service documentation</a>
+                                                into Ukrainian, starting with version 1.24.
+                                            </p>
                                         </div>
-                                        <img class="img-fluid" src="https://dummyimage.com/300x400/343a40/6c757d" alt="..." />
+                                        <img class="img-fluid col-12 col-md-6 mt-3 mt-md-0" src="/assets/projects/istio.png" alt="Screenshot of main page of Istio Service Mesh website in Ukrainian" />
                                     </div>
                                 </div>
                             </div>
-                            <!-- Project Card 2-->
-                            <div class="card overflow-hidden shadow rounded-4 border-0">
+                            <!-- Project Card Helm-->
+                            <div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
                                 <div class="card-body p-0">
-                                    <div class="d-flex align-items-center">
-                                        <div class="p-5">
-                                            <h2 class="fw-bolder">Project Name 2</h2>
-                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius at enim eum illum aperiam placeat esse? Mollitia omnis minima saepe recusandae libero, iste ad asperiores! Explicabo commodi quo itaque! Ipsam!</p>
+                                    <div class="d-flex flex-column flex-md-row align-items-start">
+                                        <div class="p-5 col-12 col-md-6">
+                                            <h2 class="fw-bolder">Helm</h2>
+                                            <p>
+                                                Helm is a package manager for Kubernetes, enabling developers and operators to package, configure, and deploy applications on Kubernetes clusters easily. I made and maintain
+                                                <a href="https://andygol-helm.netlify.app/uk/">Ukrainian localization of Helm documentation.</a>
+                                            </p>
                                         </div>
-                                        <img class="img-fluid" src="https://dummyimage.com/300x400/343a40/6c757d" alt="..." />
+                                        <img class="img-fluid col-12 col-md-6 mt-3 mt-md-0" src="/assets/projects/helm.png" alt="Screenshot of main page of Helm website in Ukrainian" />
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Project Card Kubernetes-->
+                            <div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
+                                <div class="card-body p-0">
+                                    <div class="d-flex flex-column flex-md-row align-items-start">
+                                        <div class="p-5 col-12 col-md-6">
+                                            <h2 class="fw-bolder">
+                                                <span class="d-inline d-md-none d-lg-inline">Kubernetes Documentation</span>
+                                                <span class="d-none d-md-inline d-lg-none">Kubernetes Docs</span>
+                                            </h2>
+                                            <p>
+                                                Kubernetes, also known as K8s, is an open source system for automating deployment, scaling, and management of containerized applications. I made and maintain
+                                                <a href="https://andygol-k8s.netlify.app/uk/">Ukrainian localization of Kubernetes documentation.</a>
+                                            </p>
+                                        </div>
+                                        <img class="img-fluid col-12 col-md-6 mt-3 mt-md-0" src="/assets/projects/k8s.png" alt="Screenshot of main page of Helm website in Ukrainian" />
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Project Card Welcome Mat for OpenStreetMap-->
+                            <div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
+                                <div class="card-body p-0">
+                                    <div class="d-flex flex-column flex-md-row align-items-start">
+                                        <div class="p-5 col-12 col-md-6">
+                                            <h2 class="fw-bolder">
+                                                <span class="d-inline d-md-none d-lg-inline">Welcome to OpenStreetMap</span>
+                                                <span class="d-none d-md-inline d-lg-none">Welcome to OSM</span>
+                                            </h2>
+                                            <p>
+                                                Modernization of the welcome mat of the OpenStreetMap project.
+                                                <a href="https://andygol.co.ua/welcome-mat-osmf/">This revision</a>
+                                                is aimed at introducing multilingual support, simplifying search, and adding a toggle between day and night modes.
+                                            </p>
+                                        </div>
+                                        <img class="img-fluid col-12 col-md-6 mt-3 mt-md-0" src="/assets/projects/welcome-osm.png" alt="Screenshot of main page of Welcome Mat | OpenstreetMap website in Englsih" />
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Project Card Switch2OSM-->
+                            <div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
+                                <div class="card-body p-0">
+                                    <div class="d-flex flex-column flex-md-row align-items-start">
+                                        <div class="p-5 col-12 col-md-6">
+                                            <h2 class="fw-bolder">Switch2OSM</h2>
+                                            <p>
+                                                A multilingual version of the Switch2OSM project aimed at helping people get started using OSM data in their own projects.
+                                                <a href="https://andygol.co.ua/switch2osm-mkdocs/">It uses Material for MkDocs</a>
+                                                for multilingual support, night and day modes, and search.
+                                            </p>
+                                        </div>
+                                        <img class="img-fluid col-12 col-md-6 mt-3 mt-md-0" src="/assets/projects/switch2osm.png" alt="Screenshot of main page of Switch to OpenstreetMap website" />
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Project Card OpenStreetMap Ukraine-->
+                            <div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
+                                <div class="card-body p-0">
+                                    <div class="d-flex flex-column flex-md-row align-items-start">
+                                        <div class="p-5 col-12 col-md-6">
+                                            <h2 class="fw-bolder">
+                                                <span class="d-inline d-md-none d-lg-inline">OpenStreetMap Ukraine</span>
+                                                <span class="d-none d-md-inline d-lg-none">OSM Ukraine</span>
+                                            </h2>
+                                            <p>
+                                                The
+                                                <a href="https://openstreetmap.org.ua/">website of the Ukrainian community</a>
+                                                of the OpenStreetMap project, describing the goals and principles of the project, which also includes a map created by the community.
+                                            </p>
+                                        </div>
+                                        <img class="img-fluid col-12 col-md-6 mt-3 mt-md-0" src="/assets/projects/osm-ua.png" alt="Screenshot of main page of the Ukrainian Community of OpenstreetMap website" />
                                     </div>
                                 </div>
                             </div>
@@ -97,7 +177,7 @@
         <footer class="bg-white py-4 mt-auto">
             <div class="container px-5">
                 <div class="row align-items-center justify-content-between flex-column flex-sm-row">
-                    <div class="col-auto"><a class="small m-0" href="index.html">Copyright &copy; Andrii Holovin 2023</a></div>
+                    <div class="col-auto"><a class="small m-0" href="index.html">Copyright &copy; Andrii Holovin 2024</a></div>
                     <div class="col-auto">
                         <span class="mx-1">&middot;</span>
                         <a class="small" href="index.html">Home</a>
@@ -105,6 +185,8 @@
                         <a class="small" href="cv.html">CV</a>
                         <span class="mx-1">&middot;</span>
                         <a class="small" href="contact.html">Contact</a>
+                        <span class="mx-1">&middot;</span>
+                        <a class="small" href="projects.html">Projects</a>
                         <span class="mx-1">&middot;</span>
                     </div>
                 </div>
