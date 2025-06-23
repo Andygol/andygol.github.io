@@ -36,7 +36,7 @@
         "url": "https://github.com/Andygol/andygol.github.io.git"
     },
     "dependencies": {
-        "bootstrap": "5.3.6",
+        "bootstrap": "5.3.7",
         "simple-icons": "13.16.0"
     },
     "devDependencies": {
