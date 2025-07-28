@@ -37,7 +37,7 @@
     },
     "dependencies": {
         "bootstrap": "5.3.7",
-        "simple-icons": "13.16.0"
+        "simple-icons": "15.8.0"
     },
     "devDependencies": {
         "autoprefixer": "10.4.21",
