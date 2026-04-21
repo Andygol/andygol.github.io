@@ -7,14 +7,14 @@ async function start() {
     try {
         await concurrently([
             { command: 'node --inspect scripts/sb-watch.js', name: 'SB_WATCH', prefixColor: 'bgBlue.bold' },
-            { 
+            {
                 command: `${browserSyncPath} dist -w --no-online`,
-                name: 'SB_BROWSER_SYNC', 
+                name: 'SB_BROWSER_SYNC',
                 prefixColor: 'bgBlue.bold',
             }
         ], {
             prefix: 'name',
-            killOthers: ['failure', 'success'],
+            killOthersOn: ['failure', 'success'],
         });
         success();
     } catch (error) {

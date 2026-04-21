@@ -1,5 +1,7 @@
 // Variables
 
+@use "sass:map";
+
 // Override Bootstrap Colors
 // Graphite
 $prime: #211f2f;
@@ -8,6 +10,7 @@ $secondary:  #918ca9;
 // Redefine Bootstrap State Colors
 $primary: $prime;
 $secondary: $secondary;
+$white: #fff;
 
 // Bootstrap Variable Functions
 $enable-negative-margins: true;
@@ -18,3 +21,25 @@ $font-weight-light: 200;
 
 // Custom Border Variables
 $border-radius-xl: 1rem;
+
+// Responsive breakpoints (Bootstrap-aligned)
+$breakpoints: (
+	sm: 576px,
+	md: 768px,
+	lg: 992px,
+	xl: 1200px,
+	xxl: 1400px
+);
+
+$breakpoint-sm: map.get($breakpoints, sm);
+$breakpoint-md: map.get($breakpoints, md);
+$breakpoint-lg: map.get($breakpoints, lg);
+$breakpoint-xl: map.get($breakpoints, xl);
+$breakpoint-xxl: map.get($breakpoints, xxl);
+
+// Short aliases for component-level media queries
+$sm: $breakpoint-sm;
+$md: $breakpoint-md;
+$lg: $breakpoint-lg;
+$xl: $breakpoint-xl;
+$xxl: $breakpoint-xxl;

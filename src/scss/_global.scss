@@ -1,5 +1,47 @@
 // Global styling for entire theme
 
+@use "variables" as vars;
+@use "sass:color";
+
+:root {
+    --bs-font-sans-serif: "Plus Jakarta Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --bs-body-font-family: var(--bs-font-sans-serif);
+    --bs-primary: #{vars.$primary};
+    --bs-primary-rgb: #{color.channel(vars.$primary, "red", $space: rgb)}, #{color.channel(vars.$primary, "green", $space: rgb)}, #{color.channel(vars.$primary, "blue", $space: rgb)};
+    --bs-secondary: #{vars.$secondary};
+    --bs-secondary-rgb: #{color.channel(vars.$secondary, "red", $space: rgb)}, #{color.channel(vars.$secondary, "green", $space: rgb)}, #{color.channel(vars.$secondary, "blue", $space: rgb)};
+    --bs-link-color: #{vars.$primary};
+    --bs-link-color-rgb: #{color.channel(vars.$primary, "red", $space: rgb)}, #{color.channel(vars.$primary, "green", $space: rgb)}, #{color.channel(vars.$primary, "blue", $space: rgb)};
+    --bs-link-hover-color: rgb(26.4, 24.8, 37.6);
+    --bs-link-hover-color-rgb: 26.4, 24.8, 37.6;
+}
+
+.btn-primary {
+    --bs-btn-bg: #{vars.$primary};
+    --bs-btn-border-color: #{vars.$primary};
+    --bs-btn-hover-bg: rgb(28.05, 26.35, 39.95);
+    --bs-btn-hover-border-color: rgb(26.4, 24.8, 37.6);
+    --bs-btn-active-bg: rgb(26.4, 24.8, 37.6);
+    --bs-btn-active-border-color: rgb(24.75, 23.25, 35.25);
+    --bs-btn-disabled-bg: #{vars.$primary};
+    --bs-btn-disabled-border-color: #{vars.$primary};
+    --bs-btn-focus-shadow-rgb: 66, 65, 78;
+}
+
+.btn-outline-primary {
+    --bs-btn-color: #{vars.$primary};
+    --bs-btn-border-color: #{vars.$primary};
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #{vars.$primary};
+    --bs-btn-hover-border-color: #{vars.$primary};
+    --bs-btn-focus-shadow-rgb: #{color.channel(vars.$primary, "red", $space: rgb)}, #{color.channel(vars.$primary, "green", $space: rgb)}, #{color.channel(vars.$primary, "blue", $space: rgb)};
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: #{vars.$primary};
+    --bs-btn-active-border-color: #{vars.$primary};
+    --bs-btn-disabled-color: #{vars.$primary};
+    --bs-btn-disabled-border-color: #{vars.$primary};
+}
+
 // Resets for body and html height for sticky footer
 body,
 html {
