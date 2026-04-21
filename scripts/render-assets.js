@@ -1,11 +1,15 @@
 'use strict';
-const fs = require('fs');
 const upath = require('upath');
 const sh = require('shelljs');
 
 module.exports = function renderAssets() {
     const sourcePath = upath.resolve(upath.dirname(__filename), '../src/assets');
     const destPath = upath.resolve(upath.dirname(__filename), '../dist/.');
-    
-    sh.cp('-R', sourcePath, destPath)
+    const cnamePath = upath.resolve(upath.dirname(__filename), '../CNAME');
+
+    sh.cp('-R', sourcePath, destPath);
+
+    if (sh.test('-f', cnamePath)) {
+        sh.cp(cnamePath, destPath);
+    }
 };
