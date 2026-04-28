@@ -1,0 +1,71 @@
+{{ $faJs := resources.Get "js/fontawesome.js" | js.Build (dict "targetPath" "js/fontawesome.js" "format" "iife" "minify" hugo.IsProduction) }}
+<script src="{{ $faJs.RelPermalink }}" defer></script>
+{{ $js := resources.Get "js/navbar.jsx" | js.Build (dict "targetPath" "js/navbar.js" "format" "iife" "minify" hugo.IsProduction) }}
+<script src="{{ $js.RelPermalink }}" defer></script>
+{{ $themeJs := resources.Get "js/theme.js" | js.Build (dict "targetPath" "js/theme.js" "format" "iife" "minify" hugo.IsProduction) }}
+<script src="{{ $themeJs.RelPermalink }}" defer></script>
+
+{{ if .Store.Get "hasMermaid" }}
+<script type="module">
+	import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.esm.min.mjs';
+
+	const blocksSelector = 'pre.mermaid';
+
+	function ensureSource(block) {
+		if (!block.dataset.mermaidSource) {
+			block.dataset.mermaidSource = block.textContent;
+		}
+	}
+
+	let rendering = false;
+	let pendingTheme = null;
+
+	async function renderDiagrams(theme) {
+		if (rendering) {
+			pendingTheme = theme;
+			return;
+		}
+
+		rendering = true;
+		pendingTheme = null;
+
+		const blocks = Array.from(document.querySelectorAll(blocksSelector));
+		if (!blocks.length) {
+			rendering = false;
+			return;
+		}
+
+		blocks.forEach((block) => {
+			ensureSource(block);
+			block.removeAttribute('data-processed');
+			block.textContent = block.dataset.mermaidSource;
+		});
+
+		mermaid.initialize({
+			startOnLoad: false,
+			theme,
+			securityLevel: 'loose',
+		});
+
+		try {
+			await mermaid.run({ querySelector: blocksSelector });
+		} finally {
+			rendering = false;
+			if (pendingTheme && pendingTheme !== theme) {
+				void renderDiagrams(pendingTheme);
+			}
+		}
+	}
+
+	function currentMermaidTheme() {
+		return document.documentElement.dataset.theme === 'dark' ? 'dark' : 'default';
+	}
+
+	void renderDiagrams(currentMermaidTheme());
+
+	document.addEventListener('themechange', (event) => {
+		const theme = event?.detail?.theme === 'dark' ? 'dark' : 'default';
+		void renderDiagrams(theme);
+	});
+</script>
+{{ end }}

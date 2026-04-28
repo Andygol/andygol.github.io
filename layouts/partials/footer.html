@@ -1,0 +1,13 @@
+<footer class="border-t border-slate-200 bg-white py-6">
+  <div class="mx-auto flex max-w-6xl flex-col items-center justify-between gap-3 px-4 text-sm text-slate-600 md:flex-row md:px-8">
+    <a class="hover:text-primary" href="{{ "/" | relLangURL }}">{{ i18n "footer_copyright" }} &copy; {{ now.Year }} Andrii Holovin</a>
+    <p class="flex flex-wrap items-center gap-2">
+      <span aria-hidden="true">&middot;</span><a class="hover:text-primary" href="{{ "/" | relLangURL }}">{{ i18n "nav_home" }}</a>
+      <span aria-hidden="true">&middot;</span><a class="hover:text-primary" href="{{ "/cv/" | relLangURL }}">{{ i18n "nav_cv" }}</a>
+      <span aria-hidden="true">&middot;</span><a class="hover:text-primary" href="{{ "/contact/" | relLangURL }}">{{ i18n "nav_contact" }}</a>
+      <span aria-hidden="true">&middot;</span><a class="hover:text-primary" href="{{ "/projects/" | relLangURL }}">{{ i18n "nav_projects" }}</a>
+      <span aria-hidden="true">&middot;</span><a class="hover:text-primary" href="{{ "/blog/" | relLangURL }}">{{ i18n "nav_blog" }}</a>
+      <span aria-hidden="true">&middot;</span>
+    </p>
+  </div>
+</footer>

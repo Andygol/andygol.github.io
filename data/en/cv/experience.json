@@ -1,0 +1,121 @@
+[
+  {
+    "period": "2014 – Present",
+    "role": "Project & Product Management consultancy | DevOps and Navigation Solutions Expert",
+    "company": "Self-employed",
+    "location": "Dnipro, Ukraine",
+    "sections": [
+      {
+        "heading": "Project & Product Management consultancy | Navigation Solutions Expert",
+        "paragraphs": [
+          "With 9+ years in Project & Product Management consultancy, I specialize in managing data workflows and ensuring OpenStreetMap's data integrity. Passionate about global navigation solutions, I optimize customer satisfaction through innovation.",
+          "In my 15+ years, I've excelled in OpenStreetMap, quality assurance, and community development.",
+          "Since 2009, my commitment to OpenStreetMap (OSM) has led me to consistently share experiences and develop expertise in GIS, communication, data analytics, product management, and documentation organization. I've facilitated global learning through workshops, presentations, and resources, including the standout [**\"Mapping for Navigation\"**](https://github.com/mapbox/mapping/tree/publisher-production/mapping-for-navigation/_posts/) guide."
+        ]
+      },
+      {
+        "heading": "DevOps Focus",
+        "paragraphs": [
+          "Diving into DevOps, I leverage Kubernetes, Helm, Flux, Terraform, and GitOps for streamlined collaboration. Committed to enhancing software development and deployment processes through Infrastructure as Code (IaC). To achieve mutual understanding between different teams in the development and operation process, I have translated and keep up-to-date the documentation of [**Istio**](https://www.linkedin.com/posts/istio_крига-скресла-після-тривалого-процесу-розгляду-activity-7260406545211940864-Q2Dz/), [**Helm**](https://andygol-helm.netlify.app/uk/), [**Kubernetes**](https://andygol-k8s.netlify.app/uk/), and other tools into Ukrainian."
+        ]
+      },
+      {
+        "heading": "Leadership and Teaching",
+        "paragraphs": [
+          "I've passionately educated team members, OSM community, students, and GIS enthusiasts globally. My adept communication skills enable me to convey complex ideas to diverse audiences, fostering a productive work environment.",
+          "Combined with my leadership and teaching abilities, I maintain engagement, distribute work efficiently, and foster a harmonious work environment, resulting in exceptional results.",
+          "Ready to embark on a new challenge—let's connect and explore synergies at the intersection of Product & Project management, DevOps, geospatial data, and banking expertise!"
+        ]
+      }
+    ]
+  },
+  {
+    "period": "Nov 2014 – Dec 2022",
+    "role": "Head Data Service Consultant",
+    "company": "Mapbox",
+    "location": "Washington, DC",
+    "sections": [
+      {
+        "heading": "Map & Navigation Feedback",
+        "paragraphs": [
+          "Established and fine-tuned a workflow for customers feedback review associated with map data issues. 99.8% of issues are resolved within 7 days.",
+          "Highlighted and structured an elimination process of weak spots in navigation services for their further improvements.",
+          "Enhanced a proactive issue resolution pipeline within the navigation data to reduce incidence of customers feedback pertaining to navigation.",
+          "Forwarded major tool improvements that increased Streets Review, Mapbox Contribute, Navigation Feedback teams productivity."
+        ]
+      },
+      {
+        "heading": "Vandalism Eradication",
+        "paragraphs": [
+          "Prevented leaks of inappropriate changes from OSM to Mapbox Streets map using internal false-positive probes to test team performance and attentiveness. Attained an impressive team accuracy score of 98% while also maintaining a stringent data review timeline of one week for published content.",
+          "Improved the review workflow for incoming OSM edits that put an end to a 6-months review backlog. Review rate per team member sky-rocketed from 2 000 to 12 000 views per day during 1 month."
+        ]
+      },
+      {
+        "heading": "Internal & External Data Analysis",
+        "paragraphs": [
+          "Created and optimised high precision dashboards for tracking KPIs and SLAs.",
+          "Performed an extensive research on OSM data suitability for navigation services comparing with other navigation service providers.",
+          "Conducted private navigation A/B tests for high priority customers.",
+          "Developed a comprehensive workflow for efficiently triaging incoming issues, distributing them among respective teams, and monitoring teams performance."
+        ]
+      },
+      {
+        "heading": "Documentation & Education",
+        "paragraphs": [
+          "Mentored several Data Service Specialists to become Project Managers, empowering them to take over operations for projects that I initiated.",
+          "Educated and trained new team members in OSM data model for top performance.",
+          "Created and implemented documentation for map data production for navigation.",
+          "Pioneered Mapillary as data source for mapping for navigation.",
+          "Established standards of communication between OSM communities and corporate mapping teams."
+        ]
+      }
+    ]
+  },
+  {
+    "period": "Apr 2014 – Mar 2015",
+    "role": "Deputy military commissioner, Head of enlistment department",
+    "company": "Military Registration and Enlistment Office",
+    "location": "Dnipro, Ukraine",
+    "sections": [
+      {
+        "paragraphs": [
+          "Drafted on the order of the President of Ukraine to protect the country against Russian aggression during the first stage of Russia invasion in 2014.",
+          "Prepared and conducted mobilisation measures related to enlisting persons eligible for military service.",
+          "Organised burial ceremonies and commemoration of the defenders of the motherland, who perished during hostilities in the East of Ukraine, defending the country from Russian aggression."
+        ]
+      }
+    ]
+  },
+  {
+    "period": "Jul 2012 – May 2015",
+    "role": "Deputy Head of the Department of Correspondent Banking Relations",
+    "company": "JSC Bank Vostok",
+    "location": "Dnipro, Ukraine",
+    "sections": [
+      {
+        "paragraphs": [
+          "Established relationships with bank-correspondents.",
+          "Managed correspondent accounts and registered them in the National Bank of Ukraine.",
+          "Arranged wire transfers via messages of 1,2,3,9 SWIFT categories.",
+          "Investigated payments processing for bank-correspondents.",
+          "Communicated with the banks-correspondents concerning processing clients' wire transfers.",
+          "Provided interbank wire transfers."
+        ]
+      }
+    ]
+  },
+  {
+    "period": "1997 – 2012",
+    "role": "Head of forex and money market department and other roles",
+    "company": "Various banks",
+    "location": "Dnipro, Ukraine",
+    "sections": [
+      {
+        "paragraphs": [
+          "15+ years of progressive banking experience, I have held various roles from trainee to department manager. My expertise spans Money Market and Forex, Correspondent Banking and Wire Transfers, as well as Financial Planning and Analytics."
+        ]
+      }
+    ]
+  }
+]

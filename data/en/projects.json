@@ -1,0 +1,95 @@
+{
+  "items": [
+    {
+      "title": "Istio",
+      "description": "Istio is an open platform for connecting, managing, and securing microservices, making it easy to build secure and reliable cloud workloads, with or without sidecars. I have [localized the Istio mesh service documentation](https://www.linkedin.com/posts/istio_крига-скресла-після-тривалого-процесу-розгляду-activity-7260406545211940864-Q2Dz/) into Ukrainian, starting with version 1.24.",
+      "url": "https://www.linkedin.com/posts/istio_крига-скресла-після-тривалого-процесу-розгляду-activity-7260406545211940864-Q2Dz/",
+      "image": "/assets/projects/istio.png",
+      "alt": "Screenshot of main page of Istio Service Mesh website in Ukrainian"
+    },
+    {
+      "title": "Helm",
+      "description": "Helm is a package manager for Kubernetes, enabling developers and operators to package, configure, and deploy applications on Kubernetes clusters easily. I made and maintain [Ukrainian localization of Helm documentation.](https://andygol-helm.netlify.app/uk/)",
+      "url": "https://andygol-helm.netlify.app/uk/",
+      "image": "/assets/projects/helm.png",
+      "alt": "Screenshot of main page of Helm website in Ukrainian"
+    },
+    {
+      "title": "Kubernetes Documentation",
+      "description": "Kubernetes, also known as K8s, is an open source system for automating deployment, scaling, and management of containerized applications. I made and maintain [Ukrainian localization of Kubernetes documentation.](https://andygol-k8s.netlify.app/uk/)",
+      "url": "https://andygol-k8s.netlify.app/uk/",
+      "image": "/assets/projects/k8s.png",
+      "alt": "Screenshot of main page of Kubernetes website in Ukrainian"
+    },
+    {
+      "title": "ZSH for Google Cloud Shell",
+      "description": "For those who want more flexibility in Google Cloud Shell, this tool will allow you to get the zsh shell, with suggestions and auto-completion.\n\n[ZSH for Google Cloud Shell](https://github.com/Andygol/gcloud-shell-zsh/)",
+      "url": "https://github.com/Andygol/gcloud-shell-zsh/",
+      "image": "/assets/projects/gcloud-zsh.png",
+      "alt": "Screenshot of GitHub repository of ZSH in Google Cloud Shell"
+    },
+    {
+      "title": "Welcome to OpenStreetMap",
+      "description": "Modernization of the welcome mat of the OpenStreetMap project. [This revision](https://andygol.co.ua/welcome-mat-osmf/) is aimed at introducing multilingual support, simplifying search, and adding a toggle between day and night modes.",
+      "url": "https://andygol.co.ua/welcome-mat-osmf/",
+      "image": "/assets/projects/welcome-osm.png",
+      "alt": "Screenshot of main page of Welcome Mat OpenStreetMap website in English"
+    },
+    {
+      "title": "Switch2OSM",
+      "description": "A multilingual version of the [Switch2OSM](https://andygol.co.ua/switch2osm-mkdocs/) project aimed at helping people get started using OSM data in their own projects. It uses Material for MkDocs for multilingual support, night and day modes, and search.",
+      "url": "https://andygol.co.ua/switch2osm-mkdocs/",
+      "image": "/assets/projects/switch2osm.png",
+      "alt": "Screenshot of main page of Switch2OSM website"
+    },
+    {
+      "title": "OpenStreetMap Ukraine",
+      "description": "The [website of the Ukrainian community](https://openstreetmap.org.ua/) of the OpenStreetMap project, describing the goals and principles of the project, which also includes a map created by the community.",
+      "url": "https://openstreetmap.org.ua/",
+      "image": "/assets/projects/osm-ua.png",
+      "alt": "Screenshot of main page of the Ukrainian OpenStreetMap community website"
+    },
+    {
+      "title": "OpenStreetMap",
+      "description": "Ukrainian localization of the [OpenStreetMap project website](https://openstreetmap.org/).",
+      "url": "https://openstreetmap.org/",
+      "image": "/assets/projects/osm-main.png",
+      "alt": "Screenshot of main page of OpenStreetMap website"
+    },
+    {
+      "title": "OpenStreetMap Wiki",
+      "description": "Creation of Ukrainian versions of the OpenStreetMap project [documentation](https://wiki.openstreetmap.org/wiki/Uk:Адреси).",
+      "url": "https://wiki.openstreetmap.org/wiki/Uk:Адреси",
+      "image": "/assets/projects/osm-wiki.png",
+      "alt": "Screenshot of main page of OpenStreetMap Wiki website"
+    },
+    {
+      "title": "iD editor",
+      "description": "Creation of a Ukrainian version of the [iD editor](https://ideditor-release.netlify.app/#background=Bing&disable_features=boundaries&id=w109981818&map=17.81/50.40238/30.68310&locale=uk) user interface, help, and walkthrough.",
+      "url": "https://ideditor-release.netlify.app/#background=Bing&disable_features=boundaries&id=w109981818&map=17.81/50.40238/30.68310&locale=uk",
+      "image": "/assets/projects/osm-id.png",
+      "alt": "Screenshot of main page of the iD editor"
+    },
+    {
+      "title": "JOSM",
+      "description": "I spearheaded the development of the Ukrainian version of the [JOSM editor](https://josm.openstreetmap.de/wiki/Uk%3AWikiStart) user interface and accompanying documentation. I also provided guidance to maintainers on implementing improvements and adding new functionality to the editor, as well as creating plugins and [validation rules](https://josm.openstreetmap.de/wiki/Rules/UkrainePhoneNumbers).",
+      "url": "https://josm.openstreetmap.de/wiki/Uk%3AWikiStart",
+      "image": "/assets/projects/osm-josm.png",
+      "alt": "Screenshot of main page of the JOSM editor website"
+    },
+    {
+      "title": "HOT Tasking Manager",
+      "description": "The localization of the [Tasking Manager](https://tasks.hotosm.org/) user interface is a key aspect of the administration of projects undertaken by the Ukrainian OpenStreetMap (OSM) community.",
+      "url": "https://tasks.hotosm.org/",
+      "image": "/assets/projects/hotosm-tm.png",
+      "alt": "Screenshot of main page of HOT Tasking Manager website"
+    },
+    {
+      "title": "MapRoulette",
+      "description": "The localization of the [MapRoulette](https://maproulette.org/) user interface and the administration of projects undertaken by the Ukrainian OpenStreetMap community. MapRoulette has dozens of mapping Challenges that are created by experienced mappers.",
+      "url": "https://maproulette.org/",
+      "image": "/assets/projects/osm-mrlt.png",
+      "alt": "Screenshot of main page of the MapRoulette website"
+    }
+  ]
+}

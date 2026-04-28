@@ -1,0 +1,35 @@
+{{ define "main" }}
+<section class="page-shell hero-grid">
+  <div class="hero-copy">
+    <p class="hero-badge">&middot; {{ .Params.badge }} &middot;</p>
+    <p class="hero-subtitle">{{ i18n "hero_subtitle" }}</p>
+    <h1 class="hero-title">
+      <span class="gradient-text">{{ .Params.hero }}</span>
+    </h1>
+    <div class="hero-actions">
+      <a class="btn-primary" href="{{ "/cv/" | relLangURL }}">{{ i18n "nav_cv" }}</a>
+      <a class="btn-outline" href="{{ "/contact/" | relLangURL }}">{{ i18n "hero_contacts" }}</a>
+    </div>
+  </div>
+  <div class="hero-media-wrap">
+    <a href="{{ "/contact/" | relLangURL }}" class="hero-media">
+      <img src="{{ "assets/profile.png" | relURL }}" alt="{{ i18n "profile_alt" }}" />
+    </a>
+  </div>
+</section>
+
+<section class="about-section">
+  <div class="about-shell">
+    <h2 class="about-title">{{ .Params.subtitle }}</h2>
+    <div class="about-copy">{{ .Content }}</div>
+    <div class="about-social">
+      {{ range hugo.Data.social.links }}
+      <a class="social-icon-btn" href="{{ .url }}" target="_blank" rel="noopener" aria-label="{{ .label }}">
+        <i class="{{ .icon }}" aria-hidden="true"></i>
+        <span class="sr-only">{{ .label }}</span>
+      </a>
+      {{ end }}
+    </div>
+  </div>
+</section>
+{{ end }}

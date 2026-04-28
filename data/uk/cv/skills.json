@@ -1,0 +1,115 @@
+[
+  {
+    "icon": "fa-solid fa-users",
+    "title": "Командна робота",
+    "items": [
+      "Agile",
+      "Lean",
+      "Scrum",
+      "Jira",
+      "GitHub",
+      "Monday",
+      "Mode Analytics",
+      "Google Suite"
+    ]
+  },
+  {
+    "icon": "fa-solid fa-sliders",
+    "title": "Soft Skills",
+    "items": [
+      "Problem Solving",
+      "Innovation",
+      "Strategic Thinking",
+      "Empathy",
+      "Design Thinking",
+      "Leadership",
+      "Collaboration"
+    ]
+  },
+  {
+    "icon": "fa-solid fa-screwdriver-wrench",
+    "title": "Технічні навички",
+    "items": [
+      "HTML",
+      "CSS",
+      "Markdown",
+      "SQL",
+      "RegExp",
+      "JSON",
+      "Yaml",
+      "JavaScript",
+      "Python",
+      "PostgreSQL",
+      "PostGIS",
+      "Git",
+      "Shell",
+      "Docker"
+    ]
+  },
+  {
+    "icon": "fa-solid fa-location-dot",
+    "title": "ГІС",
+    "items": [
+      "OSM Data Model",
+      "JOSM",
+      "iD",
+      "Vespucci",
+      "Merkaartor",
+      "QGIS",
+      "OSMCHa",
+      "Valhalla",
+      "OSRM",
+      "Overpass Turbo",
+      "Osmosis",
+      "HOT Tasking Manager",
+      "MapRoulette",
+      "LeafletJS",
+      "MaplibreJS"
+    ]
+  },
+  {
+    "icon": "fa-solid fa-server",
+    "title": "DevOps навички",
+    "items": [
+      "Git",
+      "Docker",
+      "Kubernetes",
+      "Helm",
+      "Istio",
+      "Flux",
+      "ArgoCD",
+      "GitOps",
+      "Terraform",
+      "IaC",
+      "GCP",
+      "Linux",
+      "Shell",
+      "Python",
+      "CI/CD"
+    ]
+  },
+  {
+    "icon": "fa-solid fa-coins",
+    "title": "Економіка",
+    "items": [
+      "Business Planning",
+      "SWIFT",
+      "Wire Transfers",
+      "Accounting",
+      "Financial Planning",
+      "Reporting",
+      "Reuters Dealing",
+      "Forex",
+      "Money Market"
+    ]
+  },
+  {
+    "icon": "fa-solid fa-language",
+    "title": "Знання мов",
+    "items": [
+      "Англійська · C1",
+      "Українська · C2",
+      "Російська · C2"
+    ]
+  }
+]

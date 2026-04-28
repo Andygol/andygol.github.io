@@ -1,5 +1,7 @@
 node_modules
 dist/
+.hugo_build.lock
+resources/_gen/
 # Logs
 logs
 *.log

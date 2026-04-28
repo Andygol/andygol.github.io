@@ -1,0 +1,20 @@
+<details class="theme-switcher">
+  <summary class="theme-switcher__trigger" aria-label="{{ i18n "theme_switcher" }}">
+    <i class="fa-solid fa-desktop theme-switcher__icon" data-theme-current-icon aria-hidden="true"></i>
+    <span class="theme-switcher__chevron hidden md:inline" aria-hidden="true">▾</span>
+  </summary>
+  <div class="theme-switcher__menu" role="menu" aria-label="{{ i18n "theme_switcher" }}">
+    <button class="theme-switcher__option" type="button" data-theme-value="light" data-theme-label="{{ i18n "theme_light" }}" data-theme-icon="fa-regular fa-sun" role="menuitemradio" aria-checked="false">
+      <i class="fa-regular fa-sun" aria-hidden="true"></i>
+      <span>{{ i18n "theme_light" }}</span>
+    </button>
+    <button class="theme-switcher__option" type="button" data-theme-value="dark" data-theme-label="{{ i18n "theme_dark" }}" data-theme-icon="fa-regular fa-moon" role="menuitemradio" aria-checked="false">
+      <i class="fa-regular fa-moon" aria-hidden="true"></i>
+      <span>{{ i18n "theme_dark" }}</span>
+    </button>
+    <button class="theme-switcher__option" type="button" data-theme-value="system" data-theme-label="{{ i18n "theme_system" }}" data-theme-icon="fa-solid fa-desktop" role="menuitemradio" aria-checked="false">
+      <i class="fa-solid fa-desktop" aria-hidden="true"></i>
+      <span>{{ i18n "theme_system" }}</span>
+    </button>
+  </div>
+</details>

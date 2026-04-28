@@ -1,0 +1,37 @@
+{{ define "main" }}
+<section class="page-section">
+  <header class="page-header">
+    <h1 class="page-title">{{ .Title }}</h1>
+    <p class="page-description mt-3">{{ i18n "blog_intro" }}</p>
+  </header>
+
+  <div class="grid gap-4 md:grid-cols-2">
+    {{ range .Paginator.Pages }}
+    <article class="card-surface relative flex h-full flex-col">
+      <p class="text-sm text-slate-500">{{ .Date.Format "02.01.2006" }}</p>
+      <h2 class="mt-2 text-2xl font-bold text-primary">
+        <a href="{{ .RelPermalink }}" class="after:absolute after:inset-0">{{ .Title }}</a>
+      </h2>
+      <p class="mt-3 flex-1 text-slate-700">{{ .Summary | plainify | truncate 220 }}</p>
+      <div class="mt-4 flex flex-wrap gap-2">
+        {{ range .Params.tags }}<span class="tag-chip">{{ . }}</span>{{ end }}
+      </div>
+    </article>
+    {{ end }}
+  </div>
+
+  {{ if gt .Paginator.TotalPages 1 }}
+  <nav class="mt-10 flex items-center gap-2" aria-label="Pagination">
+    {{ with .Paginator.Prev }}<a class="pagination-nav" href="{{ .URL }}">{{ i18n "newer" }}</a>{{ end }}
+    {{ range .Paginator.Pagers }}
+      {{ if eq . $.Paginator }}
+        <span class="pagination-current">{{ .PageNumber }}</span>
+      {{ else }}
+        <a class="pagination-page" href="{{ .URL }}">{{ .PageNumber }}</a>
+      {{ end }}
+    {{ end }}
+    {{ with .Paginator.Next }}<a class="pagination-nav" href="{{ .URL }}">{{ i18n "older" }}</a>{{ end }}
+  </nav>
+  {{ end }}
+</section>
+{{ end }}

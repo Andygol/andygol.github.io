@@ -1,0 +1,40 @@
+{
+  "links": [
+    {
+      "label": "LinkedIn",
+      "icon": "fa-brands fa-linkedin",
+      "handle": "andygol",
+      "url": "https://www.linkedin.com/in/andygol/"
+    },
+    {
+      "label": "GitHub",
+      "icon": "fa-brands fa-github",
+      "handle": "Andygol",
+      "url": "https://github.com/andygol/"
+    },
+    {
+      "label": "X",
+      "icon": "fa-brands fa-x-twitter",
+      "handle": "andygol_",
+      "url": "https://x.com/andygol_"
+    },
+    {
+      "label": "Bluesky",
+      "icon": "fa-brands fa-bluesky",
+      "handle": "andygol.bsky.social",
+      "url": "https://bsky.app/profile/andygol.bsky.social"
+    },
+    {
+      "label": "OpenStreetMap",
+      "icon": "fa-brands fa-openstreetmap",
+      "handle": "osm.org/andygol",
+      "url": "https://openstreetmap.org/user/andygol"
+    },
+    {
+      "label": "YouTube",
+      "icon": "fa-brands fa-youtube",
+      "handle": "AndriiHolovin",
+      "url": "https://www.youtube.com/@AndriiHolovin"
+    }
+  ]
+}

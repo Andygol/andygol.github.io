@@ -1,0 +1,57 @@
+{{ define "main" }}
+<article class="article-shell">
+
+  <p class="text-sm text-slate-500 dark:text-slate-400">
+    <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "02.01.2006" }}</time>
+  </p>
+
+  {{/* Title */}}
+  <h1 class="mt-2 text-3xl font-extrabold text-primary md:text-4xl">{{ .Title }}</h1>
+
+  {{/* Tags */}}
+  {{ with .Params.tags }}
+  <div class="mt-4 flex flex-wrap gap-2">
+    {{ range . }}<a class="tag-chip-link" href="{{ "/tags/" | relLangURL }}{{ . | urlize }}/">{{ . }}</a>{{ end }}
+  </div>
+  {{ end }}
+
+  {{/* Table of Contents */}}
+  {{ if .Params.toc }}
+  {{ with .TableOfContents }}
+  <details class="mt-8 rounded-lg border border-slate-200 bg-slate-50 px-5 py-4 dark:border-slate-700 dark:bg-slate-900">
+    <summary class="cursor-pointer select-none font-semibold text-primary">{{ i18n "toc_title" }}</summary>
+    <div class="toc mt-3 text-sm [&_ul]:space-y-1 [&_ul]:pl-4 [&_a]:text-secondary [&_a:hover]:text-primary">
+      {{ . }}
+    </div>
+  </details>
+  {{ end }}
+  {{ end }}
+
+  {{/* Main content */}}
+  <div class="blog-content prose prose-slate mt-8 max-w-none
+    prose-headings:text-primary
+    prose-a:text-indigo-600 hover:prose-a:text-indigo-800 prose-a:underline
+    prose-code:rounded prose-code:bg-slate-100 prose-code:px-1 prose-code:py-0.5 prose-code:text-primary prose-code:before:content-none prose-code:after:content-none
+    prose-pre:rounded-lg prose-pre:shadow-sm
+    dark:prose-invert dark:prose-headings:text-slate-100 dark:prose-a:text-indigo-300 dark:prose-strong:text-slate-100">
+    {{ .Content }}
+  </div>
+
+  {{/* Related posts */}}
+  {{ $related := .Site.RegularPages.Related . | first 3 }}
+  {{ with $related }}
+  <section class="mt-12">
+    <h2 class="text-xl font-bold text-primary">{{ i18n "related_posts" }}</h2>
+    <ul class="mt-4 space-y-2">
+      {{ range . }}
+      <li>
+        <a class="font-medium text-secondary hover:text-primary" href="{{ .RelPermalink }}">{{ .Title }}</a>
+        <span class="ml-2 text-xs text-slate-400 dark:text-slate-500">{{ .Date.Format "02.01.2006" }}</span>
+      </li>
+      {{ end }}
+    </ul>
+  </section>
+  {{ end }}
+
+</article>
+{{ end }}

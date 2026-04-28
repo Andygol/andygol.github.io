@@ -1,0 +1,25 @@
+{
+  "sections": [
+    {
+      "heading": "OpenStreetMap – global free editable map",
+      "paragraphs": [
+        "I am a long-time contributor to the [OpenStreetMap](https://openstreetmap.org/) project. I not only participate in adding new data and updating existing information, but also put a lot of effort into localising tools and documentation into Ukrainian to attract more participants from Ukraine. I translated and maintained the interfaces of such editors as [iD](https://ideditor.org/) and [JOSM](https://josm.openstreetmap.de/), translated the documentation in the OSM Wiki, and helped in the preparation of issues for the [weeklyOSM](https://weeklyosm.eu/uk). In addition, I created a website for the [Ukrainian OpenStreetMap Community](https://openstreetmap.org.ua) and helped to establish cooperation with corporate users, one of whom created and maintains a tile server for use in Ukraine.",
+        "However, my efforts are not limited to the Ukrainian community. I have updated and offered to the community site that facilitates the wide dissemination of [information about the project](https://andygol.co.ua/welcome-mat-osmf/) and [Switch2OSM](https://andygol.co.ua/switch2osm-mkdocs/), guidance on the transition to using OpenStreetMap."
+      ]
+    },
+    {
+      "heading": "3D Modeling and Printing",
+      "paragraphs": [
+        "3D printing became my hobby not long ago. I documented my first steps in this hobby on my [YouTube channel](https://www.youtube.com/@AndriiHolovin). I also made efforts to localise [Luban](https://snapmaker.com/snapmaker-luban) slicer to 100% in Ukrainian. Not only the interface was localised, but also the built-in help.",
+        "I have a universal 3D printer that also has a laser for cutting and engraving. And I managed to cut a model of the landscape of the island from plywood, see more about it [here](/en/blog/2022/02/10/making-a-model-of-an-island-using-plywood/)."
+      ]
+    },
+    {
+      "heading": "Other Hobbies and Skills",
+      "paragraphs": [
+        "[Building marble machines](https://twitter.com/andygol_/status/1563519727133401089), cross stitching, crocheting, knitting, translation of free software to Ukrainian, photography…",
+        "BC driver's licence holder with a longstanding record of safe, accident-free driving experience."
+      ]
+    }
+  ]
+}
