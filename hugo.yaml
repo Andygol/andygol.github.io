@@ -1,0 +1,73 @@
+baseURL: "https://andygol.co.ua/"
+languageCode: "en"
+title: "Andrii Holovin"
+publishDir: "dist"
+enableRobotsTXT: true
+defaultContentLanguage: "en"
+defaultContentLanguageInSubdir: true
+
+languages:
+  en:
+    languageName: "English"
+    languageCode: "en"
+    weight: 1
+    contentDir: "content/en"
+    params:
+      description: "My name is Andrii Holovin and I help brands grow. 9+ years of Project & Product Management consultancy expertise in managing data workflows, protecting data integrity in OpenStreetMap, global navigation solutions, and optimizing customer satisfaction. 15+ years of expertise in OpenStreetMap data creation and modelling, quality assurance, community development. 15+ years of progressive banking experience, I have held various roles from trainee to department manager. My expertise spans Money Market and Forex, Correspondent Banking and Wire Transfers, as well as Financial Planning and Analytics."
+  uk:
+    languageName: "Українська"
+    languageCode: "uk"
+    weight: 2
+    contentDir: "content/uk"
+    params:
+      description: "Мене звати Андрій Головін, і я допомагаю брендам розвиватися. Маю понад 9 років досвіду в сфері проєктного та продуктового менеджменту, зокрема в управлінні потоками даних, забезпеченні цілісності даних у OpenStreetMap, розробці глобальних навігаційних рішень та підвищення рівня задоволеності клієнтів. Понад 15 років досвіду у створенні та моделюванні даних OpenStreetMap, забезпеченні якості та розвитку спільноти. Понад 15 років досвіду роботи у банківській сфері, де обіймав різні посади — від стажера до керівника відділу. Мій досвід охоплює операції на грошових ринках та операції Forex, кореспондентські відносини та банківські перекази, а також фінансове планування та аналітику."
+
+params:
+  author: "Andrii Holovin"
+  keywords: "GIS, ГІС, Andrii Holovin, Андрій Головін, OSM, OpenStreetMap, project, product, scrum, agile, DevOps, CI, CD, GitOps, k8s, documentation, IaC, Terraform, Helm, Flux, Istio, Kubernetes, banking, finance, money market, forex, correspondent banking, wire transfers, financial planning, analytics, data, data integrity, data workflows, data modelling, data science, global navigation solutions, customer satisfaction, innovation, quality assurance, community development, software, translation, localization, Ukrainian, English, проєкт, продукт, управління проєктами, управління продуктом, геопросторові дані, геодані, навігація, якість даних, цілісність даних, потоки даних, моделювання даних, наука про дані, OpenStreetMap, картографія, спільнота, розробка спільноти, банківська справа, фінанси, грошовий ринок, форекс, кореспондентські відносини, міжнародні перекази, фінансове планування, аналітика, DevOps, інфраструктура як код, розгортання, розробка програмного забезпечення, документація, переклад, локалізація, українська, англійська, інновації, задоволення клієнтів, скрам, гнучка розробка"
+
+taxonomies:
+  tag: "tags"
+  category: "categories"
+
+services:
+  googleAnalytics:
+    id: G-5Z023VNWM7
+
+pagination:
+  pagerSize: 6
+
+outputs:
+  home: ["HTML", "RSS"]
+  section: ["HTML", "RSS"]
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+    renderHooks:
+      image:
+        useEmbedded: always
+      link:
+        useEmbedded: always
+  highlight:
+    noClasses: false
+
+permalinks:
+  page:
+    blog: "/:section/:year/:month/:day/:slug/"
+
+module:
+  mounts:
+    - source: "layouts"
+      target: "layouts"
+    - source: "assets"
+      target: "assets"
+    - source: "data"
+      target: "data"
+    - source: "static"
+      target: "static"
+    - source: "assets"
+      target: "static/assets"
+    - source: "CNAME"
+      target: "static/CNAME"

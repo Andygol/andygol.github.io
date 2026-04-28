@@ -1,0 +1,95 @@
+{
+  "items": [
+    {
+      "title": "Istio",
+      "description": "Istio — відкрита платформа для зʼєднання, управління та захисту мікросервісів, яка спрощує побудову надійних і безпечних хмарних навантажень, з підтримкою sidecar або без неї. Я [локалізував документацію Istio](https://www.linkedin.com/posts/istio_крига-скресла-після-тривалого-процесу-розгляду-activity-7260406545211940864-Q2Dz/) українською мовою, починаючи з версії 1.24.",
+      "url": "https://www.linkedin.com/posts/istio_крига-скресла-після-тривалого-процесу-розгляду-activity-7260406545211940864-Q2Dz/",
+      "image": "/assets/projects/istio.png",
+      "alt": "Скріншот головної сторінки сайту Istio Service Mesh українською мовою"
+    },
+    {
+      "title": "Helm",
+      "description": "Helm — менеджер пакунків для Kubernetes, що дозволяє розробникам і операторам легко пакувати, налаштовувати та розгортати застосунки у кластерах Kubernetes. Я створив та підтримую [українську локалізацію документації Helm](https://andygol-helm.netlify.app/uk/), яку було прийнято до офіційного репозиторію Helm.",
+      "url": "https://andygol-helm.netlify.app/uk/",
+      "image": "/assets/projects/helm.png",
+      "alt": "Скріншот головної сторінки сайту Helm українською мовою"
+    },
+    {
+      "title": "Документація Kubernetes",
+      "description": "Kubernetes, також відомий як K8s, — система з відкритим вихідним кодом для автоматизації розгортання, масштабування та управління контейнеризованими застосунками. Я створив та підтримую [українську локалізацію документації Kubernetes.](https://andygol-k8s.netlify.app/uk/)",
+      "url": "https://andygol-k8s.netlify.app/uk/",
+      "image": "/assets/projects/k8s.png",
+      "alt": "Скріншот головної сторінки сайту Kubernetes українською мовою"
+    },
+    {
+      "title": "ZSH для Google Cloud Shell",
+      "description": "Для тих, хто хоче більшої гнучкості в Google Cloud Shell, цей інструмент дозволить отримати оболонку zsh із підказками та автодоповненням.\n\n[ZSH для Google Cloud Shell](https://github.com/Andygol/gcloud-shell-zsh/)",
+      "url": "https://github.com/Andygol/gcloud-shell-zsh/",
+      "image": "/assets/projects/gcloud-zsh.png",
+      "alt": "Скріншот репозиторію GitHub — ZSH для Google Cloud Shell"
+    },
+    {
+      "title": "Ласкаво просимо до OpenStreetMap",
+      "description": "Модернізація вітальної частини проєкту OpenStreetMap. [Ця ревізія](https://andygol.co.ua/welcome-mat-osmf/) спрямована на впровадження багатомовної підтримки, спрощення пошуку та додавання перемикача між денним і нічним режимами. Ця робота була прийнята до офіційного репозиторію OpenStreetMap Foundation та використовується в проєкті [https://welcome.openstreetmap.org/uk/](https://welcome.openstreetmap.org/uk/).",
+      "url": "https://andygol.co.ua/welcome-mat-osmf/",
+      "image": "/assets/projects/welcome-osm.png",
+      "alt": "Скріншот головної сторінки сайту Welcome Mat OpenStreetMap"
+    },
+    {
+      "title": "Switch2OSM",
+      "description": "Багатомовна версія проєкту [Switch2OSM](https://andygol.co.ua/switch2osm-mkdocs/), що допомагає розпочати використання даних OSM у власних проєктах. Використовує Material for MkDocs для багатомовної підтримки, нічного та денного режимів і пошуку.",
+      "url": "https://andygol.co.ua/switch2osm-mkdocs/",
+      "image": "/assets/projects/switch2osm.png",
+      "alt": "Скріншот головної сторінки сайту Switch2OSM"
+    },
+    {
+      "title": "OpenStreetMap Україна",
+      "description": "[Сайт української спільноти](https://openstreetmap.org.ua/) проєкту OpenStreetMap, що описує цілі та принципи проєкту, а також містить мапу, створену спільнотою.",
+      "url": "https://openstreetmap.org.ua/",
+      "image": "/assets/projects/osm-ua.png",
+      "alt": "Скріншот головної сторінки сайту OpenStreetMap Україна"
+    },
+    {
+      "title": "OpenStreetMap",
+      "description": "Українська локалізація [сайту проєкту OpenStreetMap](https://openstreetmap.org/).",
+      "url": "https://openstreetmap.org/",
+      "image": "/assets/projects/osm-main.png",
+      "alt": "Скріншот головної сторінки сайту OpenStreetMap"
+    },
+    {
+      "title": "OpenStreetMap Wiki",
+      "description": "Створення української версії [документації](https://wiki.openstreetmap.org/wiki/Uk:Адреси) проєкту OpenStreetMap.",
+      "url": "https://wiki.openstreetmap.org/wiki/Uk:Адреси",
+      "image": "/assets/projects/osm-wiki.png",
+      "alt": "Скріншот головної сторінки OpenStreetMap Wiki"
+    },
+    {
+      "title": "Редактор iD",
+      "description": "Створення українського перекладу інтерфейсу, довідки та навчального посібника [редактора iD](https://ideditor-release.netlify.app/#background=Bing&disable_features=boundaries&id=w109981818&map=17.81/50.40238/30.68310&locale=uk).",
+      "url": "https://ideditor-release.netlify.app/#background=Bing&disable_features=boundaries&id=w109981818&map=17.81/50.40238/30.68310&locale=uk",
+      "image": "/assets/projects/osm-id.png",
+      "alt": "Скріншот головної сторінки редактора iD"
+    },
+    {
+      "title": "JOSM",
+      "description": "Я очолив розробку українського перекладу інтерфейсу та документації [редактора JOSM](https://josm.openstreetmap.de/wiki/Uk%3AWikiStart). Я також надавав рекомендації розробникам щодо впровадження покращень і нової функціональності, створення плагінів та [правил валідації](https://josm.openstreetmap.de/wiki/Rules/UkrainePhoneNumbers).",
+      "url": "https://josm.openstreetmap.de/wiki/Uk%3AWikiStart",
+      "image": "/assets/projects/osm-josm.png",
+      "alt": "Скріншот головної сторінки сайту редактора JOSM"
+    },
+    {
+      "title": "HOT Tasking Manager",
+      "description": "Локалізація інтерфейсу [Tasking Manager](https://tasks.hotosm.org/) є ключовим аспектом адміністрування проєктів, що здійснюються українською спільнотою OpenStreetMap (OSM).",
+      "url": "https://tasks.hotosm.org/",
+      "image": "/assets/projects/hotosm-tm.png",
+      "alt": "Скріншот головної сторінки сайту HOT Tasking Manager"
+    },
+    {
+      "title": "MapRoulette",
+      "description": "Локалізація інтерфейсу [MapRoulette](https://maproulette.org/) та адміністрування проєктів, що здійснюються українською спільнотою OpenStreetMap. MapRoulette містить десятки картографічних завдань, створених досвідченими картографами.",
+      "url": "https://maproulette.org/",
+      "image": "/assets/projects/osm-mrlt.png",
+      "alt": "Скріншот головної сторінки сайту MapRoulette"
+    }
+  ]
+}

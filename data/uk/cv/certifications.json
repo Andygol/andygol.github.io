@@ -1,0 +1,120 @@
+[
+  {
+    "date": "Вер. 2024",
+    "institution": "Google Cloud Skills Boost",
+    "title": "Deploy Kubernetes Applications on Google Cloud",
+    "credential_id": "11628989",
+    "credential_url": "https://www.cloudskillsboost.google/public_profiles/9e97fbf0-8025-448e-9672-a4c4357f69f4/badges/11628989",
+    "skills": "Artifact Registry, Container, Docker, GKE"
+  },
+  {
+    "date": "Бер. 2024",
+    "institution": "Google Cloud Skills Boost",
+    "title": "Build Infrastructure with Terraform on Google Cloud",
+    "credential_id": "8289644",
+    "credential_url": "https://www.cloudskillsboost.google/public_profiles/9e97fbf0-8025-448e-9672-a4c4357f69f4/badges/8289644",
+    "skills": "Google Cloud Platform (GCP), Infrastructure as Code (IaC), Terraform"
+  },
+  {
+    "date": "Бер. 2024",
+    "institution": "Google Cloud Skills Boost",
+    "title": "Monitor and Log with Google Cloud Observability",
+    "credential_id": "8287298",
+    "credential_url": "https://www.cloudskillsboost.google/public_profiles/9e97fbf0-8025-448e-9672-a4c4357f69f4/badges/8287298",
+    "skills": "Alerts, Cloud Functions, Compute Engine, Dashboard, Logging, Monitoring"
+  },
+  {
+    "date": "Бер. 2024",
+    "institution": "Google Cloud Skills Boost",
+    "title": "Implement DevOps Workflows in Google Cloud",
+    "credential_id": "8276895",
+    "credential_url": "https://www.cloudskillsboost.google/public_profiles/9e97fbf0-8025-448e-9672-a4c4357f69f4/badges/8276895",
+    "skills": "Artifact Registry, CI/CD, Cloud Build, Cloud Source Repositories, DevOps, Git, GKE"
+  },
+  {
+    "date": "Бер. 2024",
+    "institution": "Google Cloud Skills Boost",
+    "title": "Set Up an App Dev Environment on Google Cloud",
+    "credential_id": "8251270",
+    "credential_url": "https://www.cloudskillsboost.google/public_profiles/9e97fbf0-8025-448e-9672-a4c4357f69f4/badges/8251270",
+    "skills": "Cloud Functions, Cloud Storage, IAM, Monitoring, Pub/sub"
+  },
+  {
+    "date": "Бер. 2024",
+    "institution": "University of Michigan",
+    "title": "Applied Plotting, Charting & Data Representation in Python",
+    "credential_id": "RPSMUGXP4VER",
+    "credential_url": "https://coursera.org/account/accomplishments/certificate/RPSMUGXP4VER"
+  },
+  {
+    "date": "Бер. 2024",
+    "institution": "University of Michigan",
+    "title": "Introduction to Data Science in Python",
+    "credential_id": "WKUYAJS24TJU",
+    "credential_url": "https://coursera.org/account/accomplishments/certificate/WKUYAJS24TJU",
+    "skills": "Python, Pandas, NumPy, Matplotlib, Jupiter Notebook, Data Science, Data Analysis, Data Visualization, Data Cleaning, Data Wrangling, Data Preprocessing, Data Manipulation"
+  },
+  {
+    "date": "Вер. 2023",
+    "institution": "Google",
+    "title": "Google Project Management",
+    "credential_id": "TBQ8S3ZN8GYV",
+    "credential_url": "https://www.coursera.org/account/accomplishments/specialization/certificate/TBQ8S3ZN8GYV",
+    "skills": "Agile Project Management, Budgeting And Procurement, Effective Communication, Process Improvement, Project Management, Project Scoping And Planning, Risk Management, Stakeholder Management, Work Management Tools"
+  },
+  {
+    "date": "Лип. 2023",
+    "institution": "Atlassian University",
+    "title": "Agile with Atlassian Jira",
+    "credential_id": "8X27L4NH23VM",
+    "credential_url": "https://www.coursera.org/account/accomplishments/certificate/8X27L4NH23VM",
+    "skills": "Agile, Scrum, Kanban, Jira, Confluence, Team management, Project management, Software development, Software testing, Software maintenance"
+  },
+  {
+    "date": "Лип. 2023",
+    "institution": "University of Virginia Darden School of Business",
+    "title": "Fundamentals of Project Planning and Management",
+    "credential_id": "CSUFG9A4VPYR",
+    "credential_url": "https://www.coursera.org/account/accomplishments/certificate/CSUFG9A4VPYR",
+    "skills": "Project Management, Project Planning, Project Execution, Project Monitoring and Control, Project Closure, Project Scoping and Planing, Project Scheduling, Risk Management, Communication, Stakeholder Management"
+  },
+  {
+    "date": "Лип. 2023",
+    "institution": "The Linux Foundation | Cloud Native Computer Foundation",
+    "title": "Git for distributed software development | Git для розподіленої розробки програмного забезпечення",
+    "credential_id": "eaa8fc8e88fc4196a24ce05d77a3eb03",
+    "credential_url": "https://certs.prometheus.org.ua/downloads/1106824522474051ab2043ebf6b43444/Certificate.pdf",
+    "skills": "Git, Distributed Development, Software Development, Version Control"
+  },
+  {
+    "date": "Черв. 2023",
+    "institution": "The Linux Foundation | Cloud Native Computer Foundation",
+    "title": "Introduction to Linux | Основи Linux",
+    "credential_id": "46b6520d94cf4d4995126ea731c221d2",
+    "credential_url": "https://certs.prometheus.org.ua/downloads/46b6520d94cf4d4995126ea731c221d2/Certificate.pdf",
+    "skills": "Linux, Command Line, Shell, Linux File System, Linux Permissions, Linux Networking, Linux Software Management, Linux Processes, Linux File Searching, Linux File Transfer, Linux User Environment, Linux System Environment, Linux Security, Linux System Management"
+  },
+  {
+    "date": "Черв. 2023",
+    "institution": "The Linux Foundation | Cloud Native Computer Foundation",
+    "title": "Introduction to Kubernetes | Основи Kubernetes",
+    "credential_id": "e7898ab3d2574cc6b908a39846c3a762",
+    "credential_url": "https://certs.prometheus.org.ua/downloads/e7898ab3d2574cc6b908a39846c3a762/Certificate.pdf",
+    "skills": "Kubernetes, Containers, Orchestration, Kubernetes Architecture, Kubernetes Installation, Kubernetes Networking, Kubernetes Storage, Kubernetes Security, Kubernetes Monitoring, Kubernetes Logging, Kubernetes Troubleshooting, Kubernetes Application Lifecycle Management"
+  },
+  {
+    "date": "Лют. 2023",
+    "institution": "LinkedIn Learning",
+    "title": "What is Business Analysis?",
+    "credential_id": "dbc925eea4dc38e00bb14bc881e8deef35b2b4823414cc6b7691adb13ce65b75",
+    "credential_url": "https://www.linkedin.com/learning/certificates/dbc925eea4dc38e00bb14bc881e8deef35b2b4823414cc6b7691adb13ce65b75",
+    "skills": "Business Analysis"
+  },
+  {
+    "date": "Січ. 2016",
+    "institution": "Lviv IT School",
+    "title": "Fundamentals of Web UI development | Основи Web UI розробки",
+    "credential_id": "22d2ca2bbe1c49a6a433fcf6473e4f95",
+    "credential_url": "https://certs.prometheus.org.ua/downloads/22d2ca2bbe1c49a6a433fcf6473e4f95/Certificate.pdf"
+  }
+]

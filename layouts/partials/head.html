@@ -1,0 +1,46 @@
+<!-- meta info -->
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+{{ $metaTitle := .Title }}
+{{ $metaDescription := "" }}
+{{ if eq .Kind "404" }}
+	{{ $metaTitle = i18n "not_found_title" }}
+	{{ $metaDescription = i18n "not_found_description" }}
+{{ end }}
+<meta name="author" content="{{ site.Params.author }}" />
+{{ with site.Params.keywords }}<meta name="keywords" content="{{ . }}" />{{ end }}
+<meta name="robots" content="index, follow" />
+<meta name="description" content="{{ or .Description $metaDescription site.Params.description }}" />
+<title>{{ if .IsHome }}{{ site.Title }}{{ else }}{{ $metaTitle }} | {{ site.Title }}{{ end }}</title>
+<!-- Google Analytics -->
+{{ partial "google_analytics.html" . }}
+<!-- Open Graph -->
+{{ partial "opengraph.html" . }}
+<!-- Twitter Cards -->
+{{ partial "twitter_cards.html" . }}
+<!-- Theme Preference -->
+<script>
+	(function () {
+		var key = "theme-preference";
+		var value = localStorage.getItem(key);
+		var preference = value === "light" || value === "dark" || value === "system" ? value : "system";
+		var isDark = preference === "dark" || (preference === "system" && window.matchMedia("(prefers-color-scheme: dark)").matches);
+		var resolved = isDark ? "dark" : "light";
+		document.documentElement.setAttribute("data-theme", resolved);
+		document.documentElement.setAttribute("data-theme-preference", preference);
+		document.documentElement.style.colorScheme = resolved;
+	})();
+</script>
+<!-- Stylesheets and icons -->
+{{ $faviconIco := resources.Get "favicon.ico" }}
+{{ $faviconSvg := resources.Get "favicon.svg" }}
+{{ if $faviconIco }}<link rel="icon" href="{{ $faviconIco.RelPermalink }}" sizes="48x48" />{{ end }}
+{{ if $faviconSvg }}<link rel="icon" href="{{ $faviconSvg.RelPermalink }}" type="image/svg+xml" />{{ end }}
+{{ if $faviconIco }}<link rel="apple-touch-icon" href="{{ $faviconIco.RelPermalink }}" />{{ end }}
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700;800&display=swap" rel="stylesheet" />
+{{ $css := resources.Get "css/main.css" | postCSS | minify | fingerprint }}
+<link rel="stylesheet" href="{{ $css.RelPermalink }}" integrity="{{ $css.Data.Integrity }}" />
+{{ $chroma := resources.Get "css/chroma.css" | minify | fingerprint }}
+<link rel="stylesheet" href="{{ $chroma.RelPermalink }}" integrity="{{ $chroma.Data.Integrity }}" />
