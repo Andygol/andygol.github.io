@@ -1,5 +1,5 @@
 baseURL: "https://andygol.co.ua/"
-languageCode: "en"
+locale: "en"
 title: "Andrii Holovin"
 publishDir: "dist"
 enableRobotsTXT: true
@@ -8,15 +8,15 @@ defaultContentLanguageInSubdir: true
 
 languages:
   en:
-    languageName: "English"
-    languageCode: "en"
+    label: "English"
+    locale: "en"
     weight: 1
     contentDir: "content/en"
     params:
       description: "My name is Andrii Holovin and I help brands grow. 9+ years of Project & Product Management consultancy expertise in managing data workflows, protecting data integrity in OpenStreetMap, global navigation solutions, and optimizing customer satisfaction. 15+ years of expertise in OpenStreetMap data creation and modelling, quality assurance, community development. 15+ years of progressive banking experience, I have held various roles from trainee to department manager. My expertise spans Money Market and Forex, Correspondent Banking and Wire Transfers, as well as Financial Planning and Analytics."
   uk:
-    languageName: "Українська"
-    languageCode: "uk"
+    label: "Українська"
+    locale: "uk"
     weight: 2
     contentDir: "content/uk"
     params:
