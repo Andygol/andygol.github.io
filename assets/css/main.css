@@ -1,6 +1,5 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+@config "../../tailwind.config.js";
 
 @layer base {
   :root {
@@ -148,7 +147,7 @@
   }
 
   .tag-chip-link {
-    @apply tag-chip transition-colors hover:bg-slate-200 hover:text-primary;
+    @apply rounded-full border border-slate-200/60 bg-slate-100 px-3 py-1 text-xs text-slate-600 transition-colors hover:bg-slate-200 hover:text-primary;
   }
 
   .section-anchor {
@@ -265,17 +264,27 @@
 
   .nav-link[data-tooltip]::after {
     content: attr(data-tooltip);
-    @apply pointer-events-none absolute left-1/2 top-[calc(100%+0.7rem)] z-40 -translate-x-1/2 whitespace-nowrap rounded-[0.65rem] border border-white/20 px-2.5 py-1 text-[0.68rem] font-bold uppercase tracking-[0.12em] text-white opacity-0 transition-all duration-200;
+    @apply pointer-events-none absolute left-1/2 top-[calc(100%+0.7rem)] z-40 whitespace-nowrap rounded-[0.65rem] border border-white/20 px-2.5 py-1 text-[0.68rem] font-bold uppercase tracking-[0.12em] text-white opacity-0 transition-all duration-200;
     background: var(--gradient-tooltip);
     box-shadow: var(--shadow-tooltip);
+    text-align: center;
     transform: translate(-50%, -0.2rem) scale(0.96);
   }
 
   .nav-link[data-tooltip]::before {
     content: "";
-    @apply pointer-events-none absolute left-1/2 top-[calc(100%+0.33rem)] z-40 h-2.5 w-2.5 -translate-x-1/2 rotate-45 border-l border-t border-white/20 opacity-0 transition-all duration-200;
+    position: absolute;
+    left: 50%;
+    top: calc(100% + 0.56rem);
+    z-index: 39;
+    width: 0.8rem;
+    height: 0.5rem;
     background: var(--color-tooltip-caret);
-    transform: translate(-50%, -0.2rem) rotate(45deg);
+    clip-path: polygon(50% 0, 0 100%, 100% 100%);
+    opacity: 0;
+    transition: opacity 0.2s ease, transform 0.2s ease;
+    transform: translate(-50%, -0.2rem);
+    pointer-events: none;
   }
 
   .nav-link[data-tooltip]:hover::after,
@@ -286,8 +295,18 @@
 
   .nav-link[data-tooltip]:hover::before,
   .nav-link[data-tooltip]:focus-visible::before {
-    @apply opacity-100;
-    transform: translate(-50%, 0) rotate(45deg);
+    opacity: 1;
+    transform: translate(-50%, 0);
+  }
+
+  .nav-link--active[data-tooltip]::after,
+  .nav-link--active[data-tooltip]::before,
+  .nav-link--active[data-tooltip]:hover::after,
+  .nav-link--active[data-tooltip]:hover::before,
+  .nav-link--active[data-tooltip]:focus-visible::after,
+  .nav-link--active[data-tooltip]:focus-visible::before {
+    content: none;
+    opacity: 0;
   }
 
   .nav-menu--open .nav-link[data-tooltip]::before,
@@ -306,7 +325,8 @@
     height: var(--nav-control-height);
   }
 
-  @screen md {
+  /* md breakpoint */
+  @media (min-width: 768px) {
     .theme-switcher__trigger,
     .lang-switcher__trigger {
       height: auto;
@@ -470,7 +490,8 @@
     @apply w-full;
   }
 
-  @screen sm {
+  /* sm breakpoint */
+  @media (min-width: 640px) {
     .hero-grid {
       @apply gap-y-8;
     }
@@ -496,7 +517,8 @@
     }
   }
 
-  @screen md {
+  /* md breakpoint */
+  @media (min-width: 768px) {
     .hero-media {
       width: 50vw;
       height: 50vw;
@@ -517,7 +539,8 @@
     }
   }
 
-  @screen lg {
+  /* lg breakpoint */
+  @media (min-width: 1024px) {
     .hero-media {
       width: 40vw;
       height: 40vw;
@@ -528,7 +551,8 @@
     }
   }
 
-  @screen xl {
+  /* xl breakpoint */
+  @media (min-width: 1280px) {
     .hero-media {
       width: 35vw;
       height: 35vw;
@@ -561,6 +585,7 @@
     }
   }
 
+  /* Custom wide-desktop breakpoint */
   @media (min-width: 1750px) {
     .hero-grid {
       max-width: var(--hero-grid-max);
