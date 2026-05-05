@@ -1,9 +1,25 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+@config "./tailwind.config.js";
 
 @layer base {
   :root {
+    --light-bg-page: #ffffff;
+    --light-bg-soft: #f1f5f9;
+    --light-bg-surface: #f8fafc;
+    --light-border-soft: #cbd5e1;
+    --light-border-strong: #e2e8f0;
+    --light-text-primary: #1e293b;
+    --light-text-secondary: #334155;
+    --light-link: #4f46e5;
+    --light-link-hover: #3730a3;
+    --light-brand-primary: #211f2f;
+    --light-brand-primary-mid: #4c4766;
+    --light-brand-secondary: #918ca9;
+    --light-tooltip-caret: #403b57;
+    --light-projects-cta-from: #1f2538;
+    --light-projects-cta-mid: #5d6c8f;
+    --light-projects-cta-to: #94a3c5;
+
     --nav-control-height: 2.35rem;
 
     /* Hero badge */
@@ -13,17 +29,17 @@
     --hero-badge-line-height: 1;
 
     /* Brand colours (mirrors Tailwind theme) */
-    --color-primary: #211f2f;
-    --color-primary-mid: #4c4766;
-    --color-secondary: #918ca9;
-    --color-tooltip-caret: #403b57;
+    --color-primary: var(--light-brand-primary);
+    --color-primary-mid: var(--light-brand-primary-mid);
+    --color-secondary: var(--light-brand-secondary);
+    --color-tooltip-caret: var(--light-tooltip-caret);
 
     /* Body background */
     --bg-body: radial-gradient(circle at top right, rgba(145, 140, 169, 0.18), transparent 32rem);
 
     /* Gradients */
-    --gradient-tooltip: linear-gradient(135deg, #211f2f 0%, #4c4766 55%, #918ca9 100%);
-    --gradient-projects-cta: linear-gradient(110deg, #1f2538 0%, #5d6c8f 55%, #94a3c5 100%);
+    --gradient-tooltip: linear-gradient(135deg, var(--light-brand-primary) 0%, var(--light-brand-primary-mid) 55%, var(--light-brand-secondary) 100%);
+    --gradient-projects-cta: linear-gradient(110deg, var(--light-projects-cta-from) 0%, var(--light-projects-cta-mid) 55%, var(--light-projects-cta-to) 100%);
 
     /* Shadows */
     --shadow-nav-menu: 0 1rem 2rem rgba(33, 31, 47, 0.08);
@@ -49,24 +65,40 @@
     --hero-grid-max: 1360px;
 
     /* Blog content */
-    --blog-pre-bg: #f8fafc;
-    --blog-pre-border: #cbd5e1;
-    --blog-pre-text: #1e293b;
+    --blog-pre-bg: var(--light-bg-surface);
+    --blog-pre-border: var(--light-border-soft);
+    --blog-pre-text: var(--light-text-primary);
     --blog-pre-shadow: 0 0 0 1px rgba(148, 163, 184, 0.12), 0 8px 18px rgba(15, 23, 42, 0.08);
     --blog-mermaid-shadow: 0 0 0 1px rgba(148, 163, 184, 0.12), 0 8px 18px rgba(15, 23, 42, 0.08);
 
     /* Content links */
-    --color-link: #4f46e5;
-    --color-link-hover: #3730a3;
+    --color-link: var(--light-link);
+    --color-link-hover: var(--light-link-hover);
 
     /* 404 page */
-    --error-code-bg: #f1f5f9;
-    --error-code-border: #e2e8f0;
+    --error-code-bg: var(--light-bg-soft);
+    --error-code-border: var(--light-border-strong);
     --error-code-tracking: 0.08em;
-    --error-description-color: #334155;
+    --error-description-color: var(--light-text-secondary);
   }
 
   html[data-theme="dark"] {
+    --dark-bg-page: #020617;
+    --dark-bg-elevated: #0f172a;
+    --dark-bg-surface: #1e293b;
+    --dark-bg-surface-hover: #334155;
+    --dark-border-strong: #334155;
+    --dark-border-contrast: #e5e7eb;
+    --dark-text-primary: #f1f5f9;
+    --dark-text-heading: #e2e8f0;
+    --dark-text-body: #cbd5e1;
+    --dark-text-muted: #94a3b8;
+    --dark-link: #a5b4fc;
+    --dark-link-hover: #e0e7ff;
+    --dark-link-strong-hover: #e0e7ff;
+    --dark-border-muted: #64748b;
+    --dark-border-hover: #475569;
+
     --bg-body: radial-gradient(circle at top right, rgba(148, 163, 184, 0.14), transparent 34rem);
     --gradient-projects-cta: linear-gradient(110deg, #0f172a 0%, #1e293b 55%, #334155 100%);
     --shadow-projects-cta: 0 1rem 2.6rem rgba(2, 6, 23, 0.5);
@@ -79,20 +111,20 @@
     --shadow-btn-outline-hover: 0 1rem 2.5rem rgba(148, 163, 184, 0.22);
 
     /* Content links */
-    --color-link: #a5b4fc;
-    --color-link-hover: #e0e7ff;
+    --color-link: var(--dark-link);
+    --color-link-hover: var(--dark-link-strong-hover);
 
     /* Blog content */
-    --blog-pre-bg: #0f172a;
-    --blog-pre-border: #334155;
-    --blog-pre-text: #e2e8f0;
+    --blog-pre-bg: var(--dark-bg-elevated);
+    --blog-pre-border: var(--dark-border-strong);
+    --blog-pre-text: var(--dark-text-heading);
     --blog-pre-shadow: none;
     --blog-mermaid-shadow: 0 0 0 1px rgba(51, 65, 85, 0.32), 0 10px 22px rgba(2, 6, 23, 0.45);
 
     /* 404 page */
-    --error-code-bg: #1e293b;
-    --error-code-border: #334155;
-    --error-description-color: #cbd5e1;
+    --error-code-bg: var(--dark-bg-surface);
+    --error-code-border: var(--dark-border-strong);
+    --error-description-color: var(--dark-text-body);
   }
 
   html {
@@ -101,6 +133,7 @@
 
   body {
     @apply bg-white text-primary antialiased;
+    background-color: var(--light-bg-page);
     background-image: var(--bg-body);
   }
 
@@ -148,7 +181,7 @@
   }
 
   .tag-chip-link {
-    @apply tag-chip transition-colors hover:bg-slate-200 hover:text-primary;
+    @apply rounded-full border border-slate-200/60 bg-slate-100 px-3 py-1 text-xs text-slate-600 transition-colors hover:bg-slate-200 hover:text-primary;
   }
 
   .section-anchor {
@@ -265,17 +298,27 @@
 
   .nav-link[data-tooltip]::after {
     content: attr(data-tooltip);
-    @apply pointer-events-none absolute left-1/2 top-[calc(100%+0.7rem)] z-40 -translate-x-1/2 whitespace-nowrap rounded-[0.65rem] border border-white/20 px-2.5 py-1 text-[0.68rem] font-bold uppercase tracking-[0.12em] text-white opacity-0 transition-all duration-200;
+    @apply pointer-events-none absolute left-1/2 top-[calc(100%+0.7rem)] z-40 whitespace-nowrap rounded-[0.65rem] border border-white/20 px-2.5 py-1 text-[0.68rem] font-bold uppercase tracking-[0.12em] text-white opacity-0 transition-all duration-200;
     background: var(--gradient-tooltip);
     box-shadow: var(--shadow-tooltip);
+    text-align: center;
     transform: translate(-50%, -0.2rem) scale(0.96);
   }
 
   .nav-link[data-tooltip]::before {
     content: "";
-    @apply pointer-events-none absolute left-1/2 top-[calc(100%+0.33rem)] z-40 h-2.5 w-2.5 -translate-x-1/2 rotate-45 border-l border-t border-white/20 opacity-0 transition-all duration-200;
+    position: absolute;
+    left: 50%;
+    top: calc(100% + 0.56rem);
+    z-index: 39;
+    width: 0.8rem;
+    height: 0.5rem;
     background: var(--color-tooltip-caret);
-    transform: translate(-50%, -0.2rem) rotate(45deg);
+    clip-path: polygon(50% 0, 0 100%, 100% 100%);
+    opacity: 0;
+    transition: opacity 0.2s ease, transform 0.2s ease;
+    transform: translate(-50%, -0.2rem);
+    pointer-events: none;
   }
 
   .nav-link[data-tooltip]:hover::after,
@@ -286,8 +329,24 @@
 
   .nav-link[data-tooltip]:hover::before,
   .nav-link[data-tooltip]:focus-visible::before {
-    @apply opacity-100;
-    transform: translate(-50%, 0) rotate(45deg);
+    opacity: 1;
+    transform: translate(-50%, 0);
+  }
+
+  .nav-link--active[data-tooltip]::after,
+  .nav-link--active[data-tooltip]::before {
+    content: none;
+    opacity: 0;
+  }
+
+  .nav-link--active[data-tooltip]:hover::after,
+  .nav-link--active[data-tooltip]:focus-visible::after {
+    content: attr(data-tooltip);
+  }
+
+  .nav-link--active[data-tooltip]:hover::before,
+  .nav-link--active[data-tooltip]:focus-visible::before {
+    content: "";
   }
 
   .nav-menu--open .nav-link[data-tooltip]::before,
@@ -306,7 +365,8 @@
     height: var(--nav-control-height);
   }
 
-  @screen md {
+  /* md breakpoint */
+  @media (min-width: 768px) {
     .theme-switcher__trigger,
     .lang-switcher__trigger {
       height: auto;
@@ -470,7 +530,8 @@
     @apply w-full;
   }
 
-  @screen sm {
+  /* sm breakpoint */
+  @media (min-width: 640px) {
     .hero-grid {
       @apply gap-y-8;
     }
@@ -496,7 +557,8 @@
     }
   }
 
-  @screen md {
+  /* md breakpoint */
+  @media (min-width: 768px) {
     .hero-media {
       width: 50vw;
       height: 50vw;
@@ -517,7 +579,8 @@
     }
   }
 
-  @screen lg {
+  /* lg breakpoint */
+  @media (min-width: 1024px) {
     .hero-media {
       width: 40vw;
       height: 40vw;
@@ -528,7 +591,8 @@
     }
   }
 
-  @screen xl {
+  /* xl breakpoint */
+  @media (min-width: 1280px) {
     .hero-media {
       width: 35vw;
       height: 35vw;
@@ -561,6 +625,7 @@
     }
   }
 
+  /* Custom wide-desktop breakpoint */
   @media (min-width: 1750px) {
     .hero-grid {
       max-width: var(--hero-grid-max);
@@ -618,11 +683,6 @@
 
   .social-icon-btn i {
     font-size: 2rem;
-  }
-
-  .social-icon-btn .svg-inline--fa {
-    width: 28px;
-    height: 28px;
   }
 
   /* ── Contact Card ────────────────────────────────────────────── */
@@ -741,16 +801,19 @@
   }
 
   .blog-content pre:not(.mermaid) {
+    /* Override prose CSS variables on the element itself so they win over inherited values */
+    --tw-prose-pre-bg: var(--blog-pre-bg);
+    --tw-prose-pre-code: var(--blog-pre-text);
     background-color: var(--blog-pre-bg);
     border: 1px solid var(--blog-pre-border);
-    box-shadow: var(--blog-pre-shadow);
+    box-shadow: var(--blog-pre-shadow) !important;
     color: var(--blog-pre-text);
   }
 
   .blog-content pre:not(.mermaid) code {
-    background: transparent;
-    color: inherit;
-    padding: 0;
+    background: transparent !important;
+    color: inherit !important;
+    padding: 0 !important;
   }
 
   .blog-content .highlight pre.chroma .line {
@@ -787,20 +850,28 @@
 
   html[data-theme="dark"] .text-primary {
     @apply text-slate-200;
+    color: var(--dark-text-heading) !important;
   }
 
   html[data-theme="dark"] .text-secondary {
     @apply text-indigo-300;
+    color: var(--dark-link) !important;
+  }
+
+  html[data-theme="dark"] .page-title {
+    color: var(--dark-text-heading) !important;
+  }
+
+  html[data-theme="dark"] .page-description {
+    color: var(--dark-text-body) !important;
   }
 
   html[data-theme="dark"] .text-slate-700 {
-    color: #cbd5e1; /* slate-300 */
+    color: var(--dark-text-body) !important; /* slate-300 */
   }
 
-  html[data-theme="dark"] .text-slate-600,
-  html[data-theme="dark"] .text-slate-500,
-  html[data-theme="dark"] .text-slate-400 {
-    color: #94a3b8; /* slate-400 */
+  html[data-theme="dark"] :is(.text-slate-600, .text-slate-500, .text-slate-400) {
+    color: var(--dark-text-muted) !important; /* slate-400 */
   }
 
   html[data-theme="dark"] .bg-slate-100 {
@@ -810,14 +881,37 @@
   html[data-theme="dark"] header.border-b,
   html[data-theme="dark"] footer.border-t {
     @apply border-slate-700 bg-slate-900;
+    border-color: var(--dark-border-strong) !important;
+    background-color: var(--dark-bg-elevated) !important;
+  }
+
+  html[data-theme="dark"] .brand-link {
+    color: var(--dark-text-heading) !important;
+  }
+
+  html[data-theme="dark"] .nav-link {
+    color: var(--dark-text-heading) !important;
+  }
+
+  html[data-theme="dark"] .nav-link:hover {
+    color: var(--dark-link) !important;
   }
 
   html[data-theme="dark"] .card-surface {
     @apply border-slate-700 bg-slate-800;
   }
 
+  html[data-theme="dark"] .card-surface .rounded-2xl .text-slate-700 {
+    color: var(--dark-text-body);
+  }
+
+  html[data-theme="dark"] .card-surface .rounded-2xl .text-slate-500 {
+    color: var(--dark-text-muted);
+  }
+
   html[data-theme="dark"] .tag-chip {
-    @apply border-slate-700 bg-slate-800 text-slate-300;
+    @apply border-slate-700 text-slate-300;
+    background-color: var(--dark-bg-surface) !important;
   }
 
   html[data-theme="dark"] .tag-chip-link:hover {
@@ -830,7 +924,7 @@
   }
 
   html[data-theme="dark"] .gradient-text {
-    background-image: linear-gradient(90deg, #e2e8f0 0%, #a5b4fc 100%);
+    background-image: linear-gradient(90deg, var(--dark-text-heading) 0%, var(--dark-link) 100%);
   }
 
   html[data-theme="dark"] .btn-primary {
@@ -869,8 +963,8 @@
 
   html[data-theme="dark"] .pagination-current {
     @apply border-slate-300 bg-slate-800;
-    color: #f1f5f9 !important;
-    -webkit-text-fill-color: #f1f5f9 !important;
+    color: var(--dark-text-primary) !important;
+    -webkit-text-fill-color: var(--dark-text-primary) !important;
     box-shadow: 0 0.75rem 1.8rem rgba(2, 6, 23, 0.42);
   }
 
@@ -896,11 +990,12 @@
     @apply text-slate-100;
   }
 
-  html[data-theme="dark"] .lang-switcher__option:hover,
-  html[data-theme="dark"] .theme-switcher__option:hover,
-  html[data-theme="dark"] .lang-switcher__option.is-active,
-  html[data-theme="dark"] .theme-switcher__option.is-active {
+  html[data-theme="dark"] :is(.lang-switcher__option:hover, .theme-switcher__option:hover, .lang-switcher__option.is-active, .theme-switcher__option.is-active) {
     @apply bg-slate-800 text-indigo-300;
+  }
+
+  html[data-theme="dark"] .about-title {
+    color: var(--dark-text-heading) !important;
   }
 
   html[data-theme="dark"] .about-copy {
@@ -933,11 +1028,11 @@
   }
 
   html[data-theme="dark"] .blog-content {
-    color: #cbd5e1;
+    color: var(--dark-text-body);
   }
 
   html[data-theme="dark"] .blog-content :is(h1, h2, h3, h4, h5, h6, strong) {
-    color: #f1f5f9;
+    color: var(--dark-text-primary);
   }
 
   html[data-theme="dark"] .blog-content a {
@@ -949,24 +1044,150 @@
   }
 
   html[data-theme="dark"] .blog-content :not(pre) > code {
-    background-color: #1e293b;
-    color: #e2e8f0;
+    background-color: var(--dark-bg-surface);
+    color: var(--dark-text-heading);
   }
 
   html[data-theme="dark"] .blog-content blockquote {
-    border-left-color: #64748b;
-    color: #cbd5e1;
+    border-left-color: var(--dark-border-muted);
+    color: var(--dark-text-body);
   }
 
   html[data-theme="dark"] .blog-content .chroma .go {
-    color: #cbd5e1;
+    color: var(--dark-text-body);
   }
 
   html[data-theme="dark"] .toc a {
-    color: #a5b4fc;
+    color: var(--dark-link);
   }
 
   html[data-theme="dark"] .toc a:hover {
-    color: #f1f5f9;
+    color: var(--dark-text-primary);
   }
 }
+
+/* Rules below use compound/dynamic selectors that Tailwind v4 would purge inside @layer */
+html[data-theme="dark"] .card-surface .rounded-2xl.bg-slate-100 {
+  background-color: var(--dark-bg-elevated) !important;
+}
+
+/* FA SVG Core injects .svg-inline--fa dynamically; keep outside @layer to avoid Tailwind v4 purging */
+.social-icon-btn .svg-inline--fa {
+  width: 28px;
+  height: 28px;
+}
+
+/* Final dark-mode overrides outside Tailwind layers to ensure deterministic precedence */
+html[data-theme="dark"] .section-anchor {
+  color: var(--dark-text-heading);
+}
+
+html[data-theme="dark"] .section-anchor--secondary {
+  color: var(--dark-link);
+}
+
+html[data-theme="dark"] .page-title {
+  color: var(--dark-text-heading);
+}
+
+html[data-theme="dark"] .page-description {
+  color: var(--dark-text-body);
+}
+
+html[data-theme="dark"] .cv-content h5 {
+  color: var(--dark-text-heading);
+}
+
+html[data-theme="dark"] article .text-primary {
+  color: var(--dark-text-heading);
+}
+
+html[data-theme="dark"] article .text-slate-700 {
+  color: var(--dark-text-body);
+}
+
+html[data-theme="dark"] article :is(.text-slate-500, .text-slate-400, .text-slate-600) {
+  color: var(--dark-text-muted);
+}
+
+html[data-theme="dark"] header.border-b,
+html[data-theme="dark"] footer.border-t {
+  border-color: var(--dark-border-strong);
+  background-color: var(--dark-bg-elevated);
+}
+
+html[data-theme="dark"] footer.border-t a:hover {
+  color: var(--dark-link-hover) !important;
+}
+
+html[data-theme="dark"] .brand-link,
+html[data-theme="dark"] .nav-link {
+  color: var(--dark-text-heading);
+}
+
+html[data-theme="dark"] .nav-link:hover {
+  color: var(--dark-link);
+}
+
+html[data-theme="dark"] body {
+  background-color: var(--dark-bg-page);
+  color: var(--dark-text-primary);
+}
+
+html[data-theme="dark"] .tag-chip-link {
+  color: var(--dark-text-body) !important;
+  background-color: var(--dark-bg-surface) !important;
+  border-color: var(--dark-border-strong) !important;
+}
+
+html[data-theme="dark"] .tag-chip-link:hover {
+  color: var(--dark-text-primary) !important;
+  background-color: var(--dark-bg-surface-hover) !important;
+  border-color: var(--dark-border-strong) !important;
+}
+
+html[data-theme="dark"] .blog-content :is(p, li, ul, ol, blockquote) {
+  color: var(--dark-text-body);
+}
+
+html[data-theme="dark"] .blog-content :is(h1, h2, h3, h4, h5, h6, strong) {
+  color: var(--dark-text-primary);
+}
+
+html[data-theme="dark"] .blog-content {
+  --tw-prose-body: var(--dark-text-body);
+  --tw-prose-headings: var(--dark-text-primary);
+  --tw-prose-links: var(--dark-link);
+}
+
+html[data-theme="dark"] .blog-content a {
+  color: var(--dark-link);
+}
+
+html[data-theme="dark"] .blog-content a:hover {
+  color: var(--dark-link-hover);
+}
+
+html[data-theme="dark"] .blog-content :is(p, li) code {
+  color: var(--dark-text-heading);
+  background-color: var(--dark-bg-surface);
+}
+
+html[data-theme="dark"] .blog-content :is(th, td) code {
+  color: var(--dark-text-heading) !important;
+  background-color: var(--dark-bg-surface) !important;
+}
+
+html[data-theme="dark"] .blog-content :is(table, tbody tr, td) {
+  color: var(--dark-text-body);
+}
+
+html[data-theme="dark"] .blog-content th {
+  color: var(--dark-text-heading);
+}
+
+html[data-theme="dark"] .blog-content img[src$=".svg"],
+html[data-theme="dark"] .blog-content img[src*=".svg?"] {
+  filter: invert(1);
+}
+
