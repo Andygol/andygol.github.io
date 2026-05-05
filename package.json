@@ -1,13 +1,11 @@
 {
   "title": "Andrii Holovin personal website",
   "name": "andrii-holovin-personal-website",
-  "version": "2.1.0",
+  "version": "2.1.1",
   "scripts": {
-    "build:css": "tailwindcss -i assets/css/main.css -o assets/css/main.generated.css --minify",
-    "watch:css": "tailwindcss -i assets/css/main.css -o assets/css/main.generated.css --watch",
-    "build": "npm run build:css && hugo --minify",
-    "serve": "concurrently -k \"npm:watch:css\" \"hugo server --disableFastRender --buildDrafts --gc\"",
-    "serve:debug": "concurrently -k \"npm:watch:css\" \"hugo server --disableFastRender --buildDrafts --logLevel debug\""
+    "build": "hugo --minify",
+    "serve": "hugo server --disableFastRender --buildDrafts --gc",
+    "serve:debug": "hugo server --disableFastRender --buildDrafts --logLevel debug"
   },
   "description": "A personal website built with Hugo, Tailwind CSS, and React islands",
   "keywords": [
@@ -39,7 +37,6 @@
     "@fortawesome/free-solid-svg-icons": "^7.2.0",
     "@tailwindcss/cli": "^4.2.4",
     "@tailwindcss/typography": "^0.5.19",
-    "concurrently": "^9.2.1",
     "hugo-extended": "^0.161.1",
     "prettier": "3.8.3",
     "tailwindcss": "^4.2.4"
