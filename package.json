@@ -27,7 +27,7 @@
     "url": "https://github.com/Andygol/andygol.github.io.git"
   },
   "dependencies": {
-    "react": "^19.2.6",
+    "react": "^19.2.7",
     "react-dom": "^19.2.6"
   },
   "devDependencies": {
