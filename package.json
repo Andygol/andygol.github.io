@@ -39,6 +39,6 @@
     "@tailwindcss/typography": "^0.5.20",
     "hugo-extended": "^0.163.3",
     "prettier": "3.9.4",
-    "tailwindcss": "^4.3.0"
+    "tailwindcss": "^4.3.3"
   }
 }
