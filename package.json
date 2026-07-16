@@ -37,7 +37,7 @@
     "@fortawesome/free-solid-svg-icons": "^7.2.0",
     "@tailwindcss/cli": "^4.3.0",
     "@tailwindcss/typography": "^0.5.20",
-    "hugo-extended": "^0.163.1",
+    "hugo-extended": "^0.163.3",
     "prettier": "3.9.4",
     "tailwindcss": "^4.3.0"
   }
