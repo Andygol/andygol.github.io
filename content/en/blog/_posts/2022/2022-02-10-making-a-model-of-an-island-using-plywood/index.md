@@ -26,7 +26,7 @@ On the advice of [Fedor Gontsa](https://www.behance.net/gontsa), I decided to ma
 To do this, I needed to find data on a digital terrain model of an area, for example, raw data that requires processing by specialized geospatial data processing systems, such as [QGIS](https://qgis.org/en/site/), or ready-to-use isolines data.
 
 ![Mapbox Outdoors](mapbox-outdoors.png)
-<sub>_[Mapbox Outdoors](https://api.mapbox.com/styles/v1/mapbox/outdoors-v11.html?title=true&accesstoken=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4M29iazA2Z2gycXA4N2pmbDZmangifQ.-gvE53SD2WrJ6tFX7QHmA#14.46/27.72792/-17.95366/0/1) - There are isolines on one of the map styles from Mapbox_</sub>
+<sub>_[Mapbox Outdoors](https://api.mapbox.com/styles/v1/mapbox/outdoors-v12.html?title=true&access_token=pk.eyJ1IjoiZXhhbXBsZXMiLCJhIjoiY2xxeTBib3pyMGsxcTJpbXQ3bmo4YXU0ZiJ9.wvqlBMQSxTHgvAh6l9OXXw#14.46/27.72792/-17.95366/0/1) - There are isolines on one of the map styles from Mapbox_</sub>
 
 As an option, you can go to [Mapbox Studio](http://studio.mapbox.com) and take only the isolines, using the data set Mapbox Terrain v2 (<https://docs.mapbox.com/data/tilesets/reference/mapbox-terrain-v2/>), which contains exactly what we need. This is easy to do given the availability of detailed documentation with code examples and alike.
 

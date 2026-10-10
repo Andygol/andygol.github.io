@@ -26,7 +26,7 @@ tags:
 Для цього мені треба було знайти дані про цифрову модель рельєфу якоїсь місцевості. Це можуть бути як сирі дані, які можна обробити використовуючи спеціалізовані системи обробки геопросторових даних, наприклад [QGIS](https://qgis.org/uk/site/), або ж можна спробувати пошукати вже готові ізолінії.
 
 ![Mapbox Outdoors](mapbox-outdoors.png)
-<sub>_[Mapbox Outdoors](https://api.mapbox.com/styles/v1/mapbox/outdoors-v11.html?title=true&accesstoken=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4M29iazA2Z2gycXA4N2pmbDZmangifQ.-gvE53SD2WrJ6tFX7QHmA#14.46/27.72792/-17.95366/0/1) - стиль від Mapbox на якому є ізолінії_</sub>
+<sub>_[Mapbox Outdoors](https://api.mapbox.com/styles/v1/mapbox/outdoors-v12.html?title=true&access_token=pk.eyJ1IjoiZXhhbXBsZXMiLCJhIjoiY2xxeTBib3pyMGsxcTJpbXQ3bmo4YXU0ZiJ9.wvqlBMQSxTHgvAh6l9OXXw#14.46/27.72792/-17.95366/0/1) - стиль від Mapbox на якому є ізолінії_</sub>
 
 Як варіант, можна перейти в [Mapbox Studio](http://studio.mapbox.com) та взяти тільки їх, скориставшись набором даних Mapbox Terrain v2 (<https://docs.mapbox.com/data/tilesets/reference/mapbox-terrain-v2/>), який якраз і містить потрібні мені ізолінії. Зробити це досить просто, зважаючи на те наявність докладної документації з прикладами коду й тому подібне.
 
