@@ -57,6 +57,16 @@ permalinks:
   page:
     blog: "/:section/:year/:month/:day/:slug/"
 
+security:
+  exec:
+    allow:
+      - '^(dart-)?sass$'
+      - '^go$'
+      - '^git$'
+      - '^node$'
+      - '^postcss$'
+      - '^tailwindcss$'
+
 module:
   mounts:
     - source: "layouts"
@@ -71,3 +81,6 @@ module:
       target: "static/assets"
     - source: "CNAME"
       target: "static/CNAME"
+    # Security: self-host Mermaid (pinned in devDependencies) instead of an unpinned CDN.
+    - source: "node_modules/mermaid/dist"
+      target: "assets/vendor/mermaid"

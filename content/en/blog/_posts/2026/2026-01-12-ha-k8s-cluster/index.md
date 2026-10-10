@@ -61,6 +61,7 @@ We will deploy the cluster using kubeadm on virtual machines running Ubuntu, cre
 ### Cluster Topology
 
 ```mermaid
+%%{init: {"flowchart": {"layout": "dagre"}}}%%
 graph TB
   subgraph C [Control Plane and etcd]
     direction TB
@@ -86,6 +87,7 @@ graph TB
 
     subgraph HA [Keepalived
     10.10.0.100]
+      direction LR
       HA1(HAProxy
       10.10.0.101) <----->
       HA2(HAProxy
