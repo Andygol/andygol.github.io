@@ -38,7 +38,7 @@
     "@tailwindcss/cli": "^4.3.3",
     "@tailwindcss/typography": "^0.5.20",
     "hugo-extended": "^0.167.0",
-    "mermaid": "12.1.0",
+    "mermaid": "12.2.0",
     "prettier": "3.9.6",
     "tailwindcss": "^4.3.3"
   }
